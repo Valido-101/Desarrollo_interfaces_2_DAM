@@ -1,0 +1,10 @@
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\bin\Debug\Practica_0_interfaces.exe.config
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\bin\Debug\Practica_0_interfaces.exe
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\bin\Debug\Practica_0_interfaces.pdb
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\obj\Debug\Practica_0_interfaces.csprojAssemblyReference.cache
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\obj\Debug\Practica_0_interfaces.Form1.resources
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\obj\Debug\Practica_0_interfaces.Properties.Resources.resources
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\obj\Debug\Practica_0_interfaces.csproj.GenerateResource.cache
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\obj\Debug\Practica_0_interfaces.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\obj\Debug\Practica_0_interfaces.exe
+C:\Users\maxus\source\repos\Practica_0_interfaces\Practica_0_interfaces\obj\Debug\Practica_0_interfaces.pdb
