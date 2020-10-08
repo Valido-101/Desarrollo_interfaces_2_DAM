@@ -20,9 +20,9 @@ namespace Practica_2_interfaces {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("miagendaDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("miagendaDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class miagendaDataSet : global::System.Data.DataSet {
+    public partial class miagendaDataSet1 : global::System.Data.DataSet {
         
         private agendaDataTable tableagenda;
         
@@ -34,7 +34,7 @@ namespace Practica_2_interfaces {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public miagendaDataSet() {
+        public miagendaDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -45,7 +45,7 @@ namespace Practica_2_interfaces {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected miagendaDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected miagendaDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -144,7 +144,7 @@ namespace Practica_2_interfaces {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            miagendaDataSet cln = ((miagendaDataSet)(base.Clone()));
+            miagendaDataSet1 cln = ((miagendaDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -226,9 +226,9 @@ namespace Practica_2_interfaces {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "miagendaDataSet";
+            this.DataSetName = "miagendaDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/miagendaDataSet.xsd";
+            this.Namespace = "http://tempuri.org/miagendaDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableagenda = new agendaDataTable();
@@ -264,7 +264,7 @@ namespace Practica_2_interfaces {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            miagendaDataSet ds = new miagendaDataSet();
+            miagendaDataSet1 ds = new miagendaDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -544,7 +544,7 @@ namespace Practica_2_interfaces {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                miagendaDataSet ds = new miagendaDataSet();
+                miagendaDataSet1 ds = new miagendaDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -740,7 +740,7 @@ namespace Practica_2_interfaces {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tareaRow AddtareaRow(agendaRow parentagendaRowByid_agenda_foranea, int dia, int mes, System.TimeSpan hora, string descripción, string lugar) {
+            public tareaRow AddtareaRow(agendaRow parentagendaRowByid_agenda_foranea, int dia, int mes, string hora, string descripción, string lugar) {
                 tareaRow rowtareaRow = ((tareaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -759,7 +759,7 @@ namespace Practica_2_interfaces {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tareaRow FindByid_agendadiameshora(int id_agenda, int dia, int mes, System.TimeSpan hora) {
+            public tareaRow FindByid_agendadiameshora(int id_agenda, int dia, int mes, string hora) {
                 return ((tareaRow)(this.Rows.Find(new object[] {
                             id_agenda,
                             dia,
@@ -801,7 +801,7 @@ namespace Practica_2_interfaces {
                 base.Columns.Add(this.columndia);
                 this.columnmes = new global::System.Data.DataColumn("mes", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmes);
-                this.columnhora = new global::System.Data.DataColumn("hora", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
+                this.columnhora = new global::System.Data.DataColumn("hora", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnhora);
                 this.columndescripción = new global::System.Data.DataColumn("descripción", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndescripción);
@@ -816,6 +816,7 @@ namespace Practica_2_interfaces {
                 this.columndia.AllowDBNull = false;
                 this.columnmes.AllowDBNull = false;
                 this.columnhora.AllowDBNull = false;
+                this.columnhora.MaxLength = 99;
                 this.columndescripción.AllowDBNull = false;
                 this.columndescripción.MaxLength = 99;
                 this.columnlugar.AllowDBNull = false;
@@ -887,7 +888,7 @@ namespace Practica_2_interfaces {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                miagendaDataSet ds = new miagendaDataSet();
+                miagendaDataSet1 ds = new miagendaDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1054,9 +1055,9 @@ namespace Practica_2_interfaces {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.TimeSpan hora {
+            public string hora {
                 get {
-                    return ((global::System.TimeSpan)(this[this.tabletarea.horaColumn]));
+                    return ((string)(this[this.tabletarea.horaColumn]));
                 }
                 set {
                     this[this.tabletarea.horaColumn] = value;
@@ -1166,7 +1167,7 @@ namespace Practica_2_interfaces {
         }
     }
 }
-namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
+namespace Practica_2_interfaces.miagendaDataSet1TableAdapters {
     
     
     /// <summary>
@@ -1415,7 +1416,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[3];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT `id`, `nombre`, `año` FROM `agenda`";
@@ -1449,17 +1450,13 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             param.SourceColumn = "año";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._commandCollection[1].Parameters.Add(param);
-            this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT COUNT(*)+1 FROM agenda ";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(miagendaDataSet.agendaDataTable dataTable) {
+        public virtual int Fill(miagendaDataSet1.agendaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1472,9 +1469,9 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual miagendaDataSet.agendaDataTable GetData() {
+        public virtual miagendaDataSet1.agendaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            miagendaDataSet.agendaDataTable dataTable = new miagendaDataSet.agendaDataTable();
+            miagendaDataSet1.agendaDataTable dataTable = new miagendaDataSet1.agendaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1482,14 +1479,14 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(miagendaDataSet.agendaDataTable dataTable) {
+        public virtual int Update(miagendaDataSet1.agendaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(miagendaDataSet dataSet) {
+        public virtual int Update(miagendaDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "agenda");
         }
         
@@ -1640,34 +1637,6 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
                 }
             }
             return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<long> getIdAutomatico() {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            object returnValue;
-            try {
-                returnValue = command.ExecuteScalar();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            if (((returnValue == null) 
-                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return new global::System.Nullable<long>();
-            }
-            else {
-                return new global::System.Nullable<long>(((long)(returnValue)));
-            }
         }
     }
     
@@ -1830,8 +1799,8 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Time;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Time;
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "hora";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -1883,8 +1852,8 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Time;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Time;
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "hora";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
@@ -1938,8 +1907,8 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Time;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Time;
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "hora";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
@@ -1986,8 +1955,8 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p10";
-            param.DbType = global::System.Data.DbType.Time;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Time;
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "hora";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -2112,9 +2081,9 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._commandCollection[2].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Object;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Time;
-            param.Size = 1024;
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 99;
             param.IsNullable = true;
             param.SourceColumn = "hora";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -2185,9 +2154,9 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._commandCollection[5].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Object;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Time;
-            param.Size = 1024;
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 99;
             param.IsNullable = true;
             param.SourceColumn = "hora";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
@@ -2236,9 +2205,9 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._commandCollection[5].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p10";
-            param.DbType = global::System.Data.DbType.Object;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Time;
-            param.Size = 1024;
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 99;
             param.IsNullable = true;
             param.SourceColumn = "hora";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -2249,7 +2218,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(miagendaDataSet.tareaDataTable dataTable) {
+        public virtual int Fill(miagendaDataSet1.tareaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2262,9 +2231,9 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual miagendaDataSet.tareaDataTable GetData() {
+        public virtual miagendaDataSet1.tareaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            miagendaDataSet.tareaDataTable dataTable = new miagendaDataSet.tareaDataTable();
+            miagendaDataSet1.tareaDataTable dataTable = new miagendaDataSet1.tareaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2273,7 +2242,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy1(miagendaDataSet.tareaDataTable dataTable, int p1, int p2) {
+        public virtual int LLenarTablaAgendaDia(miagendaDataSet1.tareaDataTable dataTable, int p1, int p2) {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(p2));
@@ -2288,11 +2257,11 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual miagendaDataSet.tareaDataTable Get_tareas_agenda_dia_concreto(int p1, int p2) {
+        public virtual miagendaDataSet1.tareaDataTable GetTablaAgendaDia(int p1, int p2) {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(p2));
-            miagendaDataSet.tareaDataTable dataTable = new miagendaDataSet.tareaDataTable();
+            miagendaDataSet1.tareaDataTable dataTable = new miagendaDataSet1.tareaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2301,7 +2270,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int LLenarTablaTareasPorAgenda(miagendaDataSet.tareaDataTable dataTable, int p1) {
+        public virtual int LLenarTablaTareasPorAgenda(miagendaDataSet1.tareaDataTable dataTable, int p1) {
             this.Adapter.SelectCommand = this.CommandCollection[4];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             if ((this.ClearBeforeFill == true)) {
@@ -2315,10 +2284,10 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual miagendaDataSet.tareaDataTable DevolverTareasPorAgenda(int p1) {
+        public virtual miagendaDataSet1.tareaDataTable GetTablaTareasPorAgenda(int p1) {
             this.Adapter.SelectCommand = this.CommandCollection[4];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
-            miagendaDataSet.tareaDataTable dataTable = new miagendaDataSet.tareaDataTable();
+            miagendaDataSet1.tareaDataTable dataTable = new miagendaDataSet1.tareaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2326,14 +2295,14 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(miagendaDataSet.tareaDataTable dataTable) {
+        public virtual int Update(miagendaDataSet1.tareaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(miagendaDataSet dataSet) {
+        public virtual int Update(miagendaDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "tarea");
         }
         
@@ -2356,11 +2325,16 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int p1, int p2, int p3, System.DateTime p4, string p5, string p6) {
+        public virtual int Delete(int p1, int p2, int p3, string p4, string p5, string p6) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(p3));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(p4));
+            if ((p4 == null)) {
+                throw new global::System.ArgumentNullException("p4");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(p4));
+            }
             if ((p5 == null)) {
                 throw new global::System.ArgumentNullException("p5");
             }
@@ -2393,11 +2367,16 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int p1, int p2, int p3, System.DateTime p4, string p5, string p6) {
+        public virtual int Insert(int p1, int p2, int p3, string p4, string p5, string p6) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.InsertCommand.Parameters[2].Value = ((int)(p3));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(p4));
+            if ((p4 == null)) {
+                throw new global::System.ArgumentNullException("p4");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(p4));
+            }
             if ((p5 == null)) {
                 throw new global::System.ArgumentNullException("p5");
             }
@@ -2430,11 +2409,16 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int p1, int p2, int p3, System.DateTime p4, string p5, string p6, int p7, int p8, int p9, System.DateTime p10, string p11, string p12) {
+        public virtual int Update(int p1, int p2, int p3, string p4, string p5, string p6, int p7, int p8, int p9, string p10, string p11, string p12) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(p3));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(p4));
+            if ((p4 == null)) {
+                throw new global::System.ArgumentNullException("p4");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(p4));
+            }
             if ((p5 == null)) {
                 throw new global::System.ArgumentNullException("p5");
             }
@@ -2450,7 +2434,12 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(p7));
             this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(p8));
             this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(p9));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((System.DateTime)(p10));
+            if ((p10 == null)) {
+                throw new global::System.ArgumentNullException("p10");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(p10));
+            }
             if ((p11 == null)) {
                 throw new global::System.ArgumentNullException("p11");
             }
@@ -2483,7 +2472,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string p5, string p6, int p7, int p8, int p9, System.DateTime p10, string p11, string p12) {
+        public virtual int Update(string p5, string p6, int p7, int p8, int p9, string p10, string p11, string p12) {
             return this.Update(p7, p8, p9, p10, p5, p6, p7, p8, p9, p10, p11, p12);
         }
         
@@ -2535,7 +2524,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
-        public virtual int Eliminar_tarea(int p1, int p2, int p3, object p4) {
+        public virtual int Eliminar_tarea(int p1, int p2, int p3, string p4) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
             command.Parameters[0].Value = ((int)(p1));
             command.Parameters[1].Value = ((int)(p2));
@@ -2544,7 +2533,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
                 throw new global::System.ArgumentNullException("p4");
             }
             else {
-                command.Parameters[3].Value = ((object)(p4));
+                command.Parameters[3].Value = ((string)(p4));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2567,7 +2556,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int Modificar_tarea(int p1, int p2, int p3, object p4, string p5, string p6, int p7, int p8, int p9, object p10) {
+        public virtual int Modificar_tarea(int p1, int p2, int p3, string p4, string p5, string p6, int p7, int p8, int p9, string p10) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[5];
             command.Parameters[0].Value = ((int)(p1));
             command.Parameters[1].Value = ((int)(p2));
@@ -2576,7 +2565,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
                 throw new global::System.ArgumentNullException("p4");
             }
             else {
-                command.Parameters[3].Value = ((object)(p4));
+                command.Parameters[3].Value = ((string)(p4));
             }
             if ((p5 == null)) {
                 throw new global::System.ArgumentNullException("p5");
@@ -2597,7 +2586,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
                 throw new global::System.ArgumentNullException("p10");
             }
             else {
-                command.Parameters[9].Value = ((object)(p10));
+                command.Parameters[9].Value = ((string)(p10));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2731,7 +2720,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(miagendaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(miagendaDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._agendaTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.agenda.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -2759,7 +2748,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(miagendaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(miagendaDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._agendaTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.agenda.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -2785,7 +2774,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(miagendaDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(miagendaDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tareaTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tarea.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -2835,7 +2824,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(miagendaDataSet dataSet) {
+        public virtual int UpdateAll(miagendaDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

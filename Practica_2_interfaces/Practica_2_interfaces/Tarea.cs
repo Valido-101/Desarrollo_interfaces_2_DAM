@@ -11,7 +11,7 @@ namespace Practica_2_interfaces
         private int id_agenda;
         private int dia;
         private int mes;
-        private DateTime hora;
+        private string hora;
         private string descripcion;
         private string lugar;
 
@@ -20,7 +20,7 @@ namespace Practica_2_interfaces
             
         }
 
-        public Tarea(int id_agenda,int dia, int mes, DateTime hora, string descripcion, string lugar) 
+        public Tarea(int id_agenda,int dia, int mes, string hora, string descripcion, string lugar) 
         {
             this.id_agenda = id_agenda;
             this.dia = dia;
@@ -45,7 +45,7 @@ namespace Practica_2_interfaces
             this.mes = mes;
         }
 
-        public void setHora(DateTime hora)
+        public void setHora(string hora)
         {
             this.hora = hora;
         }
@@ -75,7 +75,7 @@ namespace Practica_2_interfaces
             return mes;
         }
 
-        public DateTime getHora()
+        public string getHora()
         {
             return hora;
         }

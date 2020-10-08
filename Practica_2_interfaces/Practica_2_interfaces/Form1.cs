@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,14 @@ namespace Practica_2_interfaces
             InitializeComponent();
         }
 
+        ArrayList agendas = new ArrayList();
+        ArrayList tareas = new ArrayList();
+
+        //Recuperar fila y celda que quiera al hacer click en una celda:
+        //DataGridView.Rows[e.RowIndex].Cells[0(por ejemplo)];
+        //Ejecutar consulta sobre tabla:
+        //agendaTableAdapter.(nombre de la consulta)+parámetros
+
         private void btn_salir_Click(object sender, EventArgs e)
         {
             var salir = MessageBox.Show("¿Desea salir del programa?", "Salir", MessageBoxButtons.YesNo);
@@ -31,6 +40,25 @@ namespace Practica_2_interfaces
         private void btn_crear_agenda_Click(object sender, EventArgs e)
         {
 
+            Crear_agenda form_crear_agenda = new Crear_agenda();
+
+            form_crear_agenda.Show();
+
+        }
+
+        private void btn_nueva_tarea_Click(object sender, EventArgs e)
+        {
+            Nueva_tarea form_nueva_tarea = new Nueva_tarea();
+
+            form_nueva_tarea.Show();
+
+        }
+
+        private void btn_mostrar_tareas_Click(object sender, EventArgs e)
+        {
+            Mostrar_tareas form_mostrar_tareas = new Mostrar_tareas();
+
+            form_mostrar_tareas.Show();
         }
     }
 }

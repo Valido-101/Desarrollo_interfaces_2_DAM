@@ -55,6 +55,7 @@
             this.btn_nueva_tarea.TabIndex = 1;
             this.btn_nueva_tarea.Text = "Nueva Tarea";
             this.btn_nueva_tarea.UseVisualStyleBackColor = true;
+            this.btn_nueva_tarea.Click += new System.EventHandler(this.btn_nueva_tarea_Click);
             // 
             // btn_modificar_tarea
             // 
@@ -82,6 +83,7 @@
             this.btn_mostrar_tareas.TabIndex = 4;
             this.btn_mostrar_tareas.Text = "Mostrar Tareas";
             this.btn_mostrar_tareas.UseVisualStyleBackColor = true;
+            this.btn_mostrar_tareas.Click += new System.EventHandler(this.btn_mostrar_tareas_Click);
             // 
             // btn_mostrar_tareas_por_dia
             // 
