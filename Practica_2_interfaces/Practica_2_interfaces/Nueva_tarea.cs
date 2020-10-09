@@ -18,8 +18,6 @@ namespace Practica_2_interfaces
             InitializeComponent();
         }
 
-        private int id_agenda;
-
         private void agendaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -37,8 +35,7 @@ namespace Practica_2_interfaces
 
         private void btn_crear_tarea_Click(object sender, EventArgs e)
         {
-            TimeSpan hora = new TimeSpan(Convert.ToInt32(txt_box_hora.Text),0,0);
-            this.tareaTableAdapter.Crear_tarea(Convert.ToInt32(txt_box_id_agenda.Text), Convert.ToInt32(txt_box_dia.Text), Convert.ToInt32(txt_box_mes.Text), txt_box_hora.Text, txt_box_descripcion.Text, txt_box_lugar.Text);
+            this.tareaTableAdapter.Crear_tarea(Convert.ToInt32(txt_box_id_agenda.Text), Convert.ToInt32(txt_box_dia.Text), Convert.ToInt32(txt_box_mes.Text), Convert.ToInt32(txt_box_hora.Text), txt_box_descripcion.Text, txt_box_lugar.Text);
             MessageBox.Show("Tarea creada con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             txt_box_dia.Clear();
             txt_box_mes.Clear();

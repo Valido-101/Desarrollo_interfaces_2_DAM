@@ -24,7 +24,7 @@ namespace Practica_2_interfaces
         //Recuperar fila y celda que quiera al hacer click en una celda:
         //DataGridView.Rows[e.RowIndex].Cells[0(por ejemplo)];
         //Ejecutar consulta sobre tabla:
-        //agendaTableAdapter.(nombre de la consulta)+parámetros
+        //agendaTableAdapter.(nombre de la consulta)+parámetro;
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
@@ -66,6 +66,13 @@ namespace Practica_2_interfaces
             Mostrar_tareas_por_dia form_mostrar_Tareas_Por_Dia = new Mostrar_tareas_por_dia();
 
             form_mostrar_Tareas_Por_Dia.Show();
+        }
+
+        private void btn_modificar_tarea_Click(object sender, EventArgs e)
+        {
+            Modificar_tarea form_modificar_Tarea = new Modificar_tarea();
+
+            form_modificar_Tarea.Show();
         }
     }
 }

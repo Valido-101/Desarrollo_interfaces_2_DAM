@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.agendaDataGridView = new System.Windows.Forms.DataGridView();
-            this.btn_crear_agenda = new System.Windows.Forms.Button();
-            this.txt_box_nombre_agenda = new System.Windows.Forms.TextBox();
-            this.txt_box_annio_agenda = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.miagendaDataSet = new Practica_2_interfaces.miagendaDataSet();
+            this.btn_crear_agenda = new System.Windows.Forms.Button();
+            this.txt_box_nombre_agenda = new System.Windows.Forms.TextBox();
+            this.txt_box_annio_agenda = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.agendaTableAdapter = new Practica_2_interfaces.miagendaDataSetTableAdapters.agendaTableAdapter();
             this.tableAdapterManager = new Practica_2_interfaces.miagendaDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.agendaDataGridView)).BeginInit();
@@ -60,6 +60,34 @@
             this.agendaDataGridView.Name = "agendaDataGridView";
             this.agendaDataGridView.Size = new System.Drawing.Size(344, 290);
             this.agendaDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "año";
+            this.dataGridViewTextBoxColumn3.HeaderText = "año";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // agendaBindingSource
+            // 
+            this.agendaBindingSource.DataMember = "agenda";
+            this.agendaBindingSource.DataSource = this.miagendaDataSet;
+            // 
+            // miagendaDataSet
+            // 
+            this.miagendaDataSet.DataSetName = "miagendaDataSet";
+            this.miagendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_crear_agenda
             // 
@@ -102,34 +130,6 @@
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Año";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "año";
-            this.dataGridViewTextBoxColumn3.HeaderText = "año";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // agendaBindingSource
-            // 
-            this.agendaBindingSource.DataMember = "agenda";
-            this.agendaBindingSource.DataSource = this.miagendaDataSet;
-            // 
-            // miagendaDataSet
-            // 
-            this.miagendaDataSet.DataSetName = "miagendaDataSet";
-            this.miagendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // agendaTableAdapter
             // 

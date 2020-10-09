@@ -37,8 +37,8 @@ namespace Practica_2_interfaces
             this.agendaTableAdapter.Crear_agenda(Convert.ToInt32(this.agendaTableAdapter.getIdAutomatico()),txt_box_nombre_agenda.Text,Convert.ToInt32(txt_box_annio_agenda.Text));
             this.agendaTableAdapter.Fill(this.miagendaDataSet.agenda);
             MessageBox.Show("Agenda creada con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            txt_box_nombre_agenda.Clear();
-            txt_box_annio_agenda.Clear();
+            this.Close();
+
         }
     }
 }

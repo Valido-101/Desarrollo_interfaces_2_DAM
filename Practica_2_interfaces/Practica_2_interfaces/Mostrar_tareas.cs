@@ -30,7 +30,7 @@ namespace Practica_2_interfaces
 
         private void btn_mostrar_tareas_Click(object sender, EventArgs e)
         {
-            this.tareaTableAdapter.LLenarTablaTareasPorAgenda(this.miagendaDataSet.tarea, Convert.ToInt32(txt_box_id_agenda.Text));
+            this.tareaTableAdapter.LLenarTablaPorAgenda(this.miagendaDataSet.tarea, Convert.ToInt32(txt_box_id_agenda.Text));
         }
     }
 }
