@@ -86,6 +86,12 @@
     <Compile Include="Mostrar_tareas.Designer.cs">
       <DependentUpon>Mostrar_tareas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mostrar_tareas_por_dia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar_tareas_por_dia.Designer.cs">
+      <DependentUpon>Mostrar_tareas_por_dia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nueva_tarea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mostrar_tareas.resx">
       <DependentUpon>Mostrar_tareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar_tareas_por_dia.resx">
+      <DependentUpon>Mostrar_tareas_por_dia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nueva_tarea.resx">
       <DependentUpon>Nueva_tarea.cs</DependentUpon>

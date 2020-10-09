@@ -26,3 +26,4 @@ C:\Users\maxus\source\repos\Practica_2_interfaces\Practica_2_interfaces\obj\Debu
 C:\Users\maxus\source\repos\Practica_2_interfaces\Practica_2_interfaces\obj\Debug\Practica_2_interfaces.pdb
 C:\Users\maxus\source\repos\Practica_2_interfaces\Practica_2_interfaces\obj\Debug\Practica_2_interfaces.Nueva_tarea.resources
 C:\Users\maxus\source\repos\Practica_2_interfaces\Practica_2_interfaces\obj\Debug\Practica_2_interfaces.Mostrar_tareas.resources
+C:\Users\maxus\source\repos\Practica_2_interfaces\Practica_2_interfaces\obj\Debug\Practica_2_interfaces.Mostrar_tareas_por_dia.resources

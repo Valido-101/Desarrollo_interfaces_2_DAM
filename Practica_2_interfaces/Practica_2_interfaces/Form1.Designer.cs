@@ -93,6 +93,7 @@
             this.btn_mostrar_tareas_por_dia.TabIndex = 5;
             this.btn_mostrar_tareas_por_dia.Text = "Mostrar Tareas de un Día";
             this.btn_mostrar_tareas_por_dia.UseVisualStyleBackColor = true;
+            this.btn_mostrar_tareas_por_dia.Click += new System.EventHandler(this.btn_mostrar_tareas_por_dia_Click);
             // 
             // btn_salir
             // 

@@ -2122,7 +2122,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             this._commandCollection[3] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "SELECT `id_agenda`, `dia`, `mes`, `hora`, `descripción`, `lugar` FROM `tarea` WHE" +
-                "RE (`id_agenda` = @p1 AND `dia`=@p2)";
+                "RE (`id_agenda` = @p1 AND `dia`=@p2 AND `mes`=@p3)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -2138,6 +2138,14 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "dia";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[3].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p3";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "mes";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._commandCollection[3].Parameters.Add(param);
             this._commandCollection[4] = new global::MySql.Data.MySqlClient.MySqlCommand();
@@ -2273,10 +2281,11 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy1(miagendaDataSet.tareaDataTable dataTable, int p1, int p2) {
+        public virtual int FillBy1(miagendaDataSet.tareaDataTable dataTable, int p1, int p2, int p3) {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(p2));
+            this.Adapter.SelectCommand.Parameters[2].Value = ((int)(p3));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -2288,10 +2297,11 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual miagendaDataSet.tareaDataTable Get_tareas_agenda_dia_concreto(int p1, int p2) {
+        public virtual miagendaDataSet.tareaDataTable Get_tareas_agenda_dia_concreto(int p1, int p2, int p3) {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(p2));
+            this.Adapter.SelectCommand.Parameters[2].Value = ((int)(p3));
             miagendaDataSet.tareaDataTable dataTable = new miagendaDataSet.tareaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
