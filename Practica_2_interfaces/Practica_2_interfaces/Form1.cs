@@ -74,5 +74,12 @@ namespace Practica_2_interfaces
 
             form_modificar_Tarea.Show();
         }
+
+        private void btn_borrar_tarea_Click(object sender, EventArgs e)
+        {
+            Borrar_tarea form_borrar_Tarea = new Borrar_tarea();
+
+            form_borrar_Tarea.Show();
+        }
     }
 }
