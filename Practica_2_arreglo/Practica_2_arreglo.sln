@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_2_arreglo", "Practica_2_arreglo\Practica_2_arreglo.csproj", "{1984CF98-D1A5-4834-A004-37480A60C72D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1984CF98-D1A5-4834-A004-37480A60C72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1984CF98-D1A5-4834-A004-37480A60C72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1984CF98-D1A5-4834-A004-37480A60C72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1984CF98-D1A5-4834-A004-37480A60C72D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AA8C0B2-4C80-47BA-BAA4-C3F8EB727065}
+	EndGlobalSection
+EndGlobal
