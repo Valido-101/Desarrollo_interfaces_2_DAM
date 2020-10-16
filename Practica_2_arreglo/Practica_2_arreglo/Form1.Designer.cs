@@ -64,6 +64,7 @@
             this.btn_mostrar_tareas.TabIndex = 11;
             this.btn_mostrar_tareas.Text = "Mostrar Tareas";
             this.btn_mostrar_tareas.UseVisualStyleBackColor = true;
+            this.btn_mostrar_tareas.Click += new System.EventHandler(this.btn_mostrar_tareas_Click);
             // 
             // btn_borrar_tarea
             // 

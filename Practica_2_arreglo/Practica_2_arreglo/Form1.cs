@@ -54,5 +54,12 @@ namespace Practica_2_arreglo
 
             form_modificar_Tarea.Show();
         }
+
+        private void btn_mostrar_tareas_Click(object sender, EventArgs e)
+        {
+            Mostrar_tareas form_mostrar_tareas = new Mostrar_tareas();
+
+            form_mostrar_tareas.Show();
+        }
     }
 }

@@ -30,31 +30,31 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_box_id_agenda = new System.Windows.Forms.TextBox();
-            this.btn_mostrar_tareas = new System.Windows.Forms.Button();
-            this.miagendaDataSet = new Practica_2_arreglo.miagendaDataSet();
-            this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.agendaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.agendaTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.annioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tareaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.tareaTableAdapter();
             this.idagendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.miagendaDataSet = new Practica_2_arreglo.miagendaDataSet();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.annioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_box_id_agenda = new System.Windows.Forms.TextBox();
+            this.btn_mostrar_tareas = new System.Windows.Forms.Button();
+            this.agendaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.agendaTableAdapter();
+            this.tareaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.tareaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -74,6 +74,52 @@
             this.dataGridView1.Size = new System.Drawing.Size(641, 150);
             this.dataGridView1.TabIndex = 15;
             // 
+            // idagendaDataGridViewTextBoxColumn
+            // 
+            this.idagendaDataGridViewTextBoxColumn.DataPropertyName = "id_agenda";
+            this.idagendaDataGridViewTextBoxColumn.HeaderText = "id_agenda";
+            this.idagendaDataGridViewTextBoxColumn.Name = "idagendaDataGridViewTextBoxColumn";
+            // 
+            // diaDataGridViewTextBoxColumn
+            // 
+            this.diaDataGridViewTextBoxColumn.DataPropertyName = "dia";
+            this.diaDataGridViewTextBoxColumn.HeaderText = "dia";
+            this.diaDataGridViewTextBoxColumn.Name = "diaDataGridViewTextBoxColumn";
+            // 
+            // mesDataGridViewTextBoxColumn
+            // 
+            this.mesDataGridViewTextBoxColumn.DataPropertyName = "mes";
+            this.mesDataGridViewTextBoxColumn.HeaderText = "mes";
+            this.mesDataGridViewTextBoxColumn.Name = "mesDataGridViewTextBoxColumn";
+            // 
+            // horaDataGridViewTextBoxColumn
+            // 
+            this.horaDataGridViewTextBoxColumn.DataPropertyName = "hora";
+            this.horaDataGridViewTextBoxColumn.HeaderText = "hora";
+            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            // 
+            // lugarDataGridViewTextBoxColumn
+            // 
+            this.lugarDataGridViewTextBoxColumn.DataPropertyName = "lugar";
+            this.lugarDataGridViewTextBoxColumn.HeaderText = "lugar";
+            this.lugarDataGridViewTextBoxColumn.Name = "lugarDataGridViewTextBoxColumn";
+            // 
+            // tareaBindingSource
+            // 
+            this.tareaBindingSource.DataMember = "tarea";
+            this.tareaBindingSource.DataSource = this.miagendaDataSet;
+            // 
+            // miagendaDataSet
+            // 
+            this.miagendaDataSet.DataSetName = "miagendaDataSet";
+            this.miagendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
@@ -87,6 +133,29 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(344, 150);
             this.dataGridView2.TabIndex = 14;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // annioDataGridViewTextBoxColumn
+            // 
+            this.annioDataGridViewTextBoxColumn.DataPropertyName = "annio";
+            this.annioDataGridViewTextBoxColumn.HeaderText = "annio";
+            this.annioDataGridViewTextBoxColumn.Name = "annioDataGridViewTextBoxColumn";
+            // 
+            // agendaBindingSource
+            // 
+            this.agendaBindingSource.DataMember = "agenda";
+            this.agendaBindingSource.DataSource = this.miagendaDataSet;
             // 
             // label3
             // 
@@ -130,83 +199,15 @@
             this.btn_mostrar_tareas.TabIndex = 9;
             this.btn_mostrar_tareas.Text = "Mostrar Tareas";
             this.btn_mostrar_tareas.UseVisualStyleBackColor = true;
-            // 
-            // miagendaDataSet
-            // 
-            this.miagendaDataSet.DataSetName = "miagendaDataSet";
-            this.miagendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // agendaBindingSource
-            // 
-            this.agendaBindingSource.DataMember = "agenda";
-            this.agendaBindingSource.DataSource = this.miagendaDataSet;
+            this.btn_mostrar_tareas.Click += new System.EventHandler(this.btn_mostrar_tareas_Click);
             // 
             // agendaTableAdapter
             // 
             this.agendaTableAdapter.ClearBeforeFill = true;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // annioDataGridViewTextBoxColumn
-            // 
-            this.annioDataGridViewTextBoxColumn.DataPropertyName = "annio";
-            this.annioDataGridViewTextBoxColumn.HeaderText = "annio";
-            this.annioDataGridViewTextBoxColumn.Name = "annioDataGridViewTextBoxColumn";
-            // 
-            // tareaBindingSource
-            // 
-            this.tareaBindingSource.DataMember = "tarea";
-            this.tareaBindingSource.DataSource = this.miagendaDataSet;
-            // 
             // tareaTableAdapter
             // 
             this.tareaTableAdapter.ClearBeforeFill = true;
-            // 
-            // idagendaDataGridViewTextBoxColumn
-            // 
-            this.idagendaDataGridViewTextBoxColumn.DataPropertyName = "id_agenda";
-            this.idagendaDataGridViewTextBoxColumn.HeaderText = "id_agenda";
-            this.idagendaDataGridViewTextBoxColumn.Name = "idagendaDataGridViewTextBoxColumn";
-            // 
-            // diaDataGridViewTextBoxColumn
-            // 
-            this.diaDataGridViewTextBoxColumn.DataPropertyName = "dia";
-            this.diaDataGridViewTextBoxColumn.HeaderText = "dia";
-            this.diaDataGridViewTextBoxColumn.Name = "diaDataGridViewTextBoxColumn";
-            // 
-            // mesDataGridViewTextBoxColumn
-            // 
-            this.mesDataGridViewTextBoxColumn.DataPropertyName = "mes";
-            this.mesDataGridViewTextBoxColumn.HeaderText = "mes";
-            this.mesDataGridViewTextBoxColumn.Name = "mesDataGridViewTextBoxColumn";
-            // 
-            // horaDataGridViewTextBoxColumn
-            // 
-            this.horaDataGridViewTextBoxColumn.DataPropertyName = "hora";
-            this.horaDataGridViewTextBoxColumn.HeaderText = "hora";
-            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            // 
-            // lugarDataGridViewTextBoxColumn
-            // 
-            this.lugarDataGridViewTextBoxColumn.DataPropertyName = "lugar";
-            this.lugarDataGridViewTextBoxColumn.HeaderText = "lugar";
-            this.lugarDataGridViewTextBoxColumn.Name = "lugarDataGridViewTextBoxColumn";
             // 
             // Mostrar_tareas
             // 
@@ -224,10 +225,10 @@
             this.Text = "Mostrar_tareas";
             this.Load += new System.EventHandler(this.Mostrar_tareas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
