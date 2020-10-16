@@ -55,6 +55,13 @@ namespace Practica_2_arreglo
             form_modificar_Tarea.Show();
         }
 
+        private void btn_borrar_tarea_Click(object sender, EventArgs e)
+        {
+            Borrar_tarea form_borrar_Tarea = new Borrar_tarea();
+
+            form_borrar_Tarea.Show();
+        }
+
         private void btn_mostrar_tareas_Click(object sender, EventArgs e)
         {
             Mostrar_tareas form_mostrar_tareas = new Mostrar_tareas();

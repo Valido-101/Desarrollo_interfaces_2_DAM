@@ -30,29 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.btn_buscar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_box_buscar_id_agenda = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.miagendaDataSet = new Practica_2_arreglo.miagendaDataSet();
-            this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.agendaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.agendaTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.annioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tareaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.tareaTableAdapter();
             this.idagendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tareaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.miagendaDataSet = new Practica_2_arreglo.miagendaDataSet();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_box_buscar_id_agenda = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.annioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.agendaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.agendaTableAdapter();
+            this.tareaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.tareaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -71,86 +71,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(641, 150);
             this.dataGridView2.TabIndex = 9;
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.Location = new System.Drawing.Point(564, 106);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
-            this.btn_buscar.TabIndex = 8;
-            this.btn_buscar.Text = "Buscar";
-            this.btn_buscar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(368, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Id de la agenda:";
-            // 
-            // txt_box_buscar_id_agenda
-            // 
-            this.txt_box_buscar_id_agenda.Location = new System.Drawing.Point(458, 108);
-            this.txt_box_buscar_id_agenda.Name = "txt_box_buscar_id_agenda";
-            this.txt_box_buscar_id_agenda.Size = new System.Drawing.Size(100, 20);
-            this.txt_box_buscar_id_agenda.TabIndex = 6;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.annioDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.agendaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 82);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 63);
-            this.dataGridView1.TabIndex = 5;
-            // 
-            // miagendaDataSet
-            // 
-            this.miagendaDataSet.DataSetName = "miagendaDataSet";
-            this.miagendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // agendaBindingSource
-            // 
-            this.agendaBindingSource.DataMember = "agenda";
-            this.agendaBindingSource.DataSource = this.miagendaDataSet;
-            // 
-            // agendaTableAdapter
-            // 
-            this.agendaTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // annioDataGridViewTextBoxColumn
-            // 
-            this.annioDataGridViewTextBoxColumn.DataPropertyName = "annio";
-            this.annioDataGridViewTextBoxColumn.HeaderText = "annio";
-            this.annioDataGridViewTextBoxColumn.Name = "annioDataGridViewTextBoxColumn";
-            // 
-            // tareaBindingSource
-            // 
-            this.tareaBindingSource.DataMember = "tarea";
-            this.tareaBindingSource.DataSource = this.miagendaDataSet;
-            // 
-            // tareaTableAdapter
-            // 
-            this.tareaTableAdapter.ClearBeforeFill = true;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // idagendaDataGridViewTextBoxColumn
             // 
@@ -188,6 +109,87 @@
             this.lugarDataGridViewTextBoxColumn.HeaderText = "lugar";
             this.lugarDataGridViewTextBoxColumn.Name = "lugarDataGridViewTextBoxColumn";
             // 
+            // tareaBindingSource
+            // 
+            this.tareaBindingSource.DataMember = "tarea";
+            this.tareaBindingSource.DataSource = this.miagendaDataSet;
+            // 
+            // miagendaDataSet
+            // 
+            this.miagendaDataSet.DataSetName = "miagendaDataSet";
+            this.miagendaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Location = new System.Drawing.Point(564, 106);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
+            this.btn_buscar.TabIndex = 8;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(368, 111);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Id de la agenda:";
+            // 
+            // txt_box_buscar_id_agenda
+            // 
+            this.txt_box_buscar_id_agenda.Location = new System.Drawing.Point(458, 108);
+            this.txt_box_buscar_id_agenda.Name = "txt_box_buscar_id_agenda";
+            this.txt_box_buscar_id_agenda.Size = new System.Drawing.Size(100, 20);
+            this.txt_box_buscar_id_agenda.TabIndex = 6;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.annioDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.agendaBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(19, 82);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 63);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // annioDataGridViewTextBoxColumn
+            // 
+            this.annioDataGridViewTextBoxColumn.DataPropertyName = "annio";
+            this.annioDataGridViewTextBoxColumn.HeaderText = "annio";
+            this.annioDataGridViewTextBoxColumn.Name = "annioDataGridViewTextBoxColumn";
+            // 
+            // agendaBindingSource
+            // 
+            this.agendaBindingSource.DataMember = "agenda";
+            this.agendaBindingSource.DataSource = this.miagendaDataSet;
+            // 
+            // agendaTableAdapter
+            // 
+            this.agendaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tareaTableAdapter
+            // 
+            this.tareaTableAdapter.ClearBeforeFill = true;
+            // 
             // Borrar_tarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,10 +204,10 @@
             this.Text = "Borrar_tarea";
             this.Load += new System.EventHandler(this.Borrar_tarea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -74,6 +74,7 @@
             this.btn_borrar_tarea.TabIndex = 10;
             this.btn_borrar_tarea.Text = "Borrar Tarea";
             this.btn_borrar_tarea.UseVisualStyleBackColor = true;
+            this.btn_borrar_tarea.Click += new System.EventHandler(this.btn_borrar_tarea_Click);
             // 
             // btn_modificar_tarea
             // 
