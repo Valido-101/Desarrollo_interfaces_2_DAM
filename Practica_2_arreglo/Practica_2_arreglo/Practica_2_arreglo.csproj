@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +53,80 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Borrar_tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrar_tarea.Designer.cs">
+      <DependentUpon>Borrar_tarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crear_agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crear_agenda.Designer.cs">
+      <DependentUpon>Crear_agenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="miagendaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>miagendaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_tarea.Designer.cs">
+      <DependentUpon>Modificar_tarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar_tareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar_tareas.Designer.cs">
+      <DependentUpon>Mostrar_tareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar_tareas_por_dia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar_tareas_por_dia.Designer.cs">
+      <DependentUpon>Mostrar_tareas_por_dia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nueva_tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nueva_tarea.Designer.cs">
+      <DependentUpon>Nueva_tarea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Borrar_tarea.resx">
+      <DependentUpon>Borrar_tarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crear_agenda.resx">
+      <DependentUpon>Crear_agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_tarea.resx">
+      <DependentUpon>Modificar_tarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar_tareas.resx">
+      <DependentUpon>Mostrar_tareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar_tareas_por_dia.resx">
+      <DependentUpon>Mostrar_tareas_por_dia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nueva_tarea.resx">
+      <DependentUpon>Nueva_tarea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +136,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="miagendaDataSet.xsc">
+      <DependentUpon>miagendaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="miagendaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>miagendaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="miagendaDataSet.xss">
+      <DependentUpon>miagendaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -2209,8 +2209,7 @@ namespace Practica_2_interfaces.miagendaDataSetTableAdapters {
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
-        internal object tareaTableAdapter;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public UpdateOrderOption UpdateOrder {

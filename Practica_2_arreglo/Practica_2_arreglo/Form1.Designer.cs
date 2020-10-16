@@ -45,6 +45,7 @@
             this.btn_salir.TabIndex = 13;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = true;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
             // btn_mostrar_tareas_por_dia
             // 
@@ -81,6 +82,7 @@
             this.btn_modificar_tarea.TabIndex = 9;
             this.btn_modificar_tarea.Text = "Modificar Tarea";
             this.btn_modificar_tarea.UseVisualStyleBackColor = true;
+            this.btn_modificar_tarea.Click += new System.EventHandler(this.btn_modificar_tarea_Click);
             // 
             // btn_nueva_tarea
             // 
@@ -90,6 +92,7 @@
             this.btn_nueva_tarea.TabIndex = 8;
             this.btn_nueva_tarea.Text = "Nueva Tarea";
             this.btn_nueva_tarea.UseVisualStyleBackColor = true;
+            this.btn_nueva_tarea.Click += new System.EventHandler(this.btn_nueva_tarea_Click);
             // 
             // btn_crear_agenda
             // 
@@ -99,6 +102,7 @@
             this.btn_crear_agenda.TabIndex = 7;
             this.btn_crear_agenda.Text = "Crear Agenda";
             this.btn_crear_agenda.UseVisualStyleBackColor = true;
+            this.btn_crear_agenda.Click += new System.EventHandler(this.btn_crear_agenda_Click);
             // 
             // Form1
             // 
