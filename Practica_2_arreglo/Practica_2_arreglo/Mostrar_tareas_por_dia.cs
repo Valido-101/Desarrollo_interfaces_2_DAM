@@ -20,8 +20,13 @@ namespace Practica_2_arreglo
         private void Mostrar_tareas_por_dia_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'miagendaDataSet.tarea' Puede moverla o quitarla según sea necesario.
-            this.tareaTableAdapter.Fill(this.miagendaDataSet.tarea);
+            //this.tareaTableAdapter.Fill(this.miagendaDataSet.tarea);
 
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            this.tareaTableAdapter.setTareasAgendaDiaConcreto(this.miagendaDataSet.tarea, Convert.ToInt32(txt_box_id_agenda.Text), Convert.ToInt32(txt_box_dia.Text), Convert.ToInt32(txt_box_mes.Text));
         }
     }
 }

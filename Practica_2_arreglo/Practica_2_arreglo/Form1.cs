@@ -68,5 +68,12 @@ namespace Practica_2_arreglo
 
             form_mostrar_tareas.Show();
         }
+
+        private void btn_mostrar_tareas_por_dia_Click(object sender, EventArgs e)
+        {
+            Mostrar_tareas_por_dia form_mostrar_Tareas_Por_Dia = new Mostrar_tareas_por_dia();
+
+            form_mostrar_Tareas_Por_Dia.Show();
+        }
     }
 }
