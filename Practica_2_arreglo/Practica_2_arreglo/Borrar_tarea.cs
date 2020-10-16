@@ -29,7 +29,7 @@ namespace Practica_2_arreglo
             this.tareaTableAdapter.setTareasAgendaConcreta(this.miagendaDataSet.tarea, Convert.ToInt32(txt_box_buscar_id_agenda.Text));
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
             var borrar = MessageBox.Show("¿Desea borrar la tarea?", "Confirmación", MessageBoxButtons.YesNo);
@@ -38,7 +38,8 @@ namespace Practica_2_arreglo
             if (borrar == DialogResult.Yes)
             {
 
-                this.tareaTableAdapter.eliminarTarea(Convert.ToInt32(txt_box_buscar_id_agenda.Text), Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells[1].Value), Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells[2].Value), Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells[3].Value));
+                this.tareaTableAdapter.eliminarTarea(Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells[0].Value), Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells[1].Value), Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells[2].Value), Convert.ToInt32(dataGridView2.Rows[e.RowIndex].Cells[3].Value));
+                MessageBox.Show("Tarea borrada con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
         }

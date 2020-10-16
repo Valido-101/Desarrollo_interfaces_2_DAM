@@ -2021,7 +2021,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[6];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[7];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT `id_agenda`, `dia`, `mes`, `hora`, `descripcion`, `lugar` FROM `tarea`";
@@ -2183,8 +2183,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
             this._commandCollection[3].Parameters.Add(param);
             this._commandCollection[4] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "SELECT `id_agenda`, `dia`, `mes`, `hora`, `descripcion`, `lugar` FROM `tarea` WHE" +
-                "RE `id_agenda`=@p1";
+            this._commandCollection[4].CommandText = "SELECT COUNT(*) FROM `tarea` WHERE `id_agenda`=@p1 AND `dia`=@p2 AND `mes`=@p3";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -2194,10 +2193,26 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
             param.SourceColumn = "id_agenda";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._commandCollection[4].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p2";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "dia";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p3";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "mes";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[4].Parameters.Add(param);
             this._commandCollection[5] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[5].Connection = this.Connection;
             this._commandCollection[5].CommandText = "SELECT `id_agenda`, `dia`, `mes`, `hora`, `descripcion`, `lugar` FROM `tarea` WHE" +
-                "RE `id_agenda`=@p1 AND `dia`=@p2 AND `mes`=@p3";
+                "RE `id_agenda`=@p1";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -2207,6 +2222,19 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
             param.SourceColumn = "id_agenda";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._commandCollection[5].Parameters.Add(param);
+            this._commandCollection[6] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[6].Connection = this.Connection;
+            this._commandCollection[6].CommandText = "SELECT `id_agenda`, `dia`, `mes`, `hora`, `descripcion`, `lugar` FROM `tarea` WHE" +
+                "RE `id_agenda`=@p1 AND `dia`=@p2 AND `mes`=@p3";
+            this._commandCollection[6].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p1";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.IsNullable = true;
+            param.SourceColumn = "id_agenda";
+            param.SourceVersion = global::System.Data.DataRowVersion.Current;
+            this._commandCollection[6].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p2";
             param.DbType = global::System.Data.DbType.Int32;
@@ -2214,7 +2242,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "dia";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
-            this._commandCollection[5].Parameters.Add(param);
+            this._commandCollection[6].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p3";
             param.DbType = global::System.Data.DbType.Int32;
@@ -2222,7 +2250,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "mes";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
-            this._commandCollection[5].Parameters.Add(param);
+            this._commandCollection[6].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2254,7 +2282,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int setTareasAgendaConcreta(miagendaDataSet.tareaDataTable dataTable, int p1) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
+            this.Adapter.SelectCommand = this.CommandCollection[5];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2268,7 +2296,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual miagendaDataSet.tareaDataTable getTareasAgendaConcreta(int p1) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
+            this.Adapter.SelectCommand = this.CommandCollection[5];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             miagendaDataSet.tareaDataTable dataTable = new miagendaDataSet.tareaDataTable();
             this.Adapter.Fill(dataTable);
@@ -2280,7 +2308,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int setTareasAgendaDiaConcreto(miagendaDataSet.tareaDataTable dataTable, int p1, int p2, int p3) {
-            this.Adapter.SelectCommand = this.CommandCollection[5];
+            this.Adapter.SelectCommand = this.CommandCollection[6];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.SelectCommand.Parameters[2].Value = ((int)(p3));
@@ -2296,7 +2324,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual miagendaDataSet.tareaDataTable getTareasAgendaDiaConcreto(int p1, int p2, int p3) {
-            this.Adapter.SelectCommand = this.CommandCollection[5];
+            this.Adapter.SelectCommand = this.CommandCollection[6];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(p1));
             this.Adapter.SelectCommand.Parameters[1].Value = ((int)(p2));
             this.Adapter.SelectCommand.Parameters[2].Value = ((int)(p3));
@@ -2573,6 +2601,37 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
                 }
             }
             return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<long> numTareasDiaConcreto(int p1, int p2, int p3) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[4];
+            command.Parameters[0].Value = ((int)(p1));
+            command.Parameters[1].Value = ((int)(p2));
+            command.Parameters[2].Value = ((int)(p3));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<long>();
+            }
+            else {
+                return new global::System.Nullable<long>(((long)(returnValue)));
+            }
         }
     }
     

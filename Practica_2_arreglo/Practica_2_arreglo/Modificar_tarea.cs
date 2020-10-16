@@ -22,22 +22,16 @@ namespace Practica_2_arreglo
         int mes = 0;
         int hora = 0;
 
-        private void Modificar_tarea_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'miagendaDataSet.tarea' Puede moverla o quitarla según sea necesario.
-            this.tareaTableAdapter.Fill(this.miagendaDataSet.tarea);
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //Recuperar fila y celda que quiera al hacer click en una celda:
-            hora = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
+            txt_box_hora.Text = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
             txt_box_descripcion.Text = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value);
             txt_box_lugar.Text = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value);
             id_agenda = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
             dia = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[1].Value);
             mes = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[2].Value);
+            hora = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
         }
 
         private void btn_buscar_tareas_Click(object sender, EventArgs e)

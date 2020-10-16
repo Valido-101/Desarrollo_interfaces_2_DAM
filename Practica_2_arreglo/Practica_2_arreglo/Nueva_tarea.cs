@@ -30,6 +30,7 @@ namespace Practica_2_arreglo
         {
             this.tareaTableAdapter.crearTarea(Convert.ToInt32(txt_box_id_agenda.Text), Convert.ToInt32(txt_box_dia.Text), Convert.ToInt32(txt_box_mes.Text), Convert.ToInt32(txt_box_hora.Text), txt_box_descripcion.Text, txt_box_lugar.Text);
             MessageBox.Show("Tarea creada con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txt_box_id_agenda.Clear();
             txt_box_dia.Clear();
             txt_box_mes.Clear();
             txt_box_hora.Clear();

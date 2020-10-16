@@ -71,7 +71,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(342, 150);
             this.dataGridView1.TabIndex = 30;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // idagendaDataGridViewTextBoxColumn
             // 
@@ -242,7 +242,6 @@
             this.Controls.Add(this.txt_box_id_agenda);
             this.Name = "Modificar_tarea";
             this.Text = "Modificar_tarea";
-            this.Load += new System.EventHandler(this.Modificar_tarea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).EndInit();
