@@ -1,7 +1,6 @@
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\bin\Debug\Practica_1_interfaces.exe.config
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\bin\Debug\Practica_1_interfaces.exe
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\bin\Debug\Practica_1_interfaces.pdb
-C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.csprojAssemblyReference.cache
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.Form1.resources
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.Properties.Resources.resources
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.csproj.GenerateResource.cache
@@ -13,3 +12,4 @@ C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debu
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.Form_3_nombres_mas_largos.resources
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.Form_mostrar_persona_con_dato_vacio.resources
 C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.Form_mostrar_personas.resources
+C:\Users\maxus\source\repos\Practica_1_interfaces\Practica_1_interfaces\obj\Debug\Practica_1_interfaces.csprojAssemblyReference.cache

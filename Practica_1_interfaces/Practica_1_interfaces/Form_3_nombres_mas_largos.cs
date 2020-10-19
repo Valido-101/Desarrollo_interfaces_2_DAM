@@ -104,14 +104,14 @@ namespace Practica_1_interfaces
                 //De lo contrario, se informa al usuario
                 else 
                 {
-                    MessageBox.Show("Debe haber al menos tres personas guardadas con nombre","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Debe haber al menos tres personas guardadas con nombre","Información",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
             }
             //Si no hay al menos 3 personas informa al usuario y muestra el listbox vacío
             else 
             {
 
-                MessageBox.Show("No hay suficientes personas. Introduzca al menos 3. Actualmente hay "+personas.Count+" personas introducidas.","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No hay suficientes personas. Introduzca al menos 3. Actualmente hay "+personas.Count+" personas introducidas.","Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
             }
             

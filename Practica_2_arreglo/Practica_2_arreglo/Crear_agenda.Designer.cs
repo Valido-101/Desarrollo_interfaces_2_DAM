@@ -41,6 +41,7 @@
             this.agendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.miagendaDataSet = new Practica_2_arreglo.miagendaDataSet();
             this.agendaTableAdapter = new Practica_2_arreglo.miagendaDataSetTableAdapters.agendaTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.agendaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.miagendaDataSet)).BeginInit();
@@ -49,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(376, 67);
+            this.label2.Location = new System.Drawing.Point(520, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 13;
@@ -58,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 67);
+            this.label1.Location = new System.Drawing.Point(502, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 12;
@@ -66,23 +67,23 @@
             // 
             // txt_box_annio_agenda
             // 
-            this.txt_box_annio_agenda.Location = new System.Drawing.Point(444, 60);
+            this.txt_box_annio_agenda.Location = new System.Drawing.Point(569, 204);
             this.txt_box_annio_agenda.Name = "txt_box_annio_agenda";
             this.txt_box_annio_agenda.Size = new System.Drawing.Size(100, 20);
             this.txt_box_annio_agenda.TabIndex = 11;
             // 
             // txt_box_nombre_agenda
             // 
-            this.txt_box_nombre_agenda.Location = new System.Drawing.Point(108, 61);
+            this.txt_box_nombre_agenda.Location = new System.Drawing.Point(569, 156);
             this.txt_box_nombre_agenda.Name = "txt_box_nombre_agenda";
             this.txt_box_nombre_agenda.Size = new System.Drawing.Size(100, 20);
             this.txt_box_nombre_agenda.TabIndex = 10;
             // 
             // btn_crear_agenda
             // 
-            this.btn_crear_agenda.Location = new System.Drawing.Point(685, 58);
+            this.btn_crear_agenda.Location = new System.Drawing.Point(569, 261);
             this.btn_crear_agenda.Name = "btn_crear_agenda";
-            this.btn_crear_agenda.Size = new System.Drawing.Size(75, 23);
+            this.btn_crear_agenda.Size = new System.Drawing.Size(100, 23);
             this.btn_crear_agenda.TabIndex = 9;
             this.btn_crear_agenda.Text = "Crear";
             this.btn_crear_agenda.UseVisualStyleBackColor = true;
@@ -97,7 +98,7 @@
             this.nombreDataGridViewTextBoxColumn,
             this.annioDataGridViewTextBoxColumn});
             this.agendaDataGridView.DataSource = this.agendaBindingSource;
-            this.agendaDataGridView.Location = new System.Drawing.Point(213, 102);
+            this.agendaDataGridView.Location = new System.Drawing.Point(35, 100);
             this.agendaDataGridView.Name = "agendaDataGridView";
             this.agendaDataGridView.Size = new System.Drawing.Size(344, 290);
             this.agendaDataGridView.TabIndex = 8;
@@ -134,11 +135,21 @@
             // 
             this.agendaTableAdapter.ClearBeforeFill = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Agendas:";
+            // 
             // Crear_agenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_box_annio_agenda);
@@ -170,5 +181,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn annioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

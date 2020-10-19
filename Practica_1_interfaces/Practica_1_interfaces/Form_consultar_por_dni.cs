@@ -43,7 +43,7 @@ namespace Practica_1_interfaces
             //Si no hay ninguna persona creada, se avisa al usuario
             if (personas.Count == 0) 
             {
-                MessageBox.Show("No se ha insertado ninguna persona.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("No se ha insertado ninguna persona.","Información",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             //Si no es así, se recorre el ArrayList de personas y se muestra la que tenga
             //un dni que coincida con el introducido, modificando el booleano a true
@@ -62,7 +62,7 @@ namespace Practica_1_interfaces
                 //por pantalla
                 if (encontrado == false) 
                 {
-                    MessageBox.Show("No se ha encontrado ninguna persona con el dni introducido.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("No se ha encontrado ninguna persona con el dni introducido.","Información",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
 
             }

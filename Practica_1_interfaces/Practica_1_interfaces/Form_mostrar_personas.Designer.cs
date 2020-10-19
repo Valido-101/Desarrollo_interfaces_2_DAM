@@ -30,6 +30,7 @@
         {
             this.lstbox_mostrar_personas = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_cerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstbox_mostrar_personas
@@ -49,11 +50,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
+            // btn_cerrar
+            // 
+            this.btn_cerrar.Location = new System.Drawing.Point(0, 300);
+            this.btn_cerrar.Name = "btn_cerrar";
+            this.btn_cerrar.Size = new System.Drawing.Size(691, 32);
+            this.btn_cerrar.TabIndex = 2;
+            this.btn_cerrar.Text = "Cerrar";
+            this.btn_cerrar.UseVisualStyleBackColor = true;
+            this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
+            // 
             // Form_mostrar_personas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 325);
+            this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstbox_mostrar_personas);
             this.Name = "Form_mostrar_personas";
@@ -68,5 +80,6 @@
 
         private System.Windows.Forms.ListBox lstbox_mostrar_personas;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_cerrar;
     }
 }

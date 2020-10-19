@@ -41,5 +41,10 @@ namespace Practica_1_interfaces
 
             label1.Text="Hay " + personas.Count + " personas";
         }
+
+        private void btn_cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

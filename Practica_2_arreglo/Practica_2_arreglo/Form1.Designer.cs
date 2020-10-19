@@ -39,7 +39,7 @@
             // 
             // btn_salir
             // 
-            this.btn_salir.Location = new System.Drawing.Point(331, 352);
+            this.btn_salir.Location = new System.Drawing.Point(360, 289);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(138, 23);
             this.btn_salir.TabIndex = 13;
@@ -49,7 +49,7 @@
             // 
             // btn_mostrar_tareas_por_dia
             // 
-            this.btn_mostrar_tareas_por_dia.Location = new System.Drawing.Point(331, 303);
+            this.btn_mostrar_tareas_por_dia.Location = new System.Drawing.Point(541, 190);
             this.btn_mostrar_tareas_por_dia.Name = "btn_mostrar_tareas_por_dia";
             this.btn_mostrar_tareas_por_dia.Size = new System.Drawing.Size(138, 23);
             this.btn_mostrar_tareas_por_dia.TabIndex = 12;
@@ -59,7 +59,7 @@
             // 
             // btn_mostrar_tareas
             // 
-            this.btn_mostrar_tareas.Location = new System.Drawing.Point(331, 257);
+            this.btn_mostrar_tareas.Location = new System.Drawing.Point(541, 144);
             this.btn_mostrar_tareas.Name = "btn_mostrar_tareas";
             this.btn_mostrar_tareas.Size = new System.Drawing.Size(138, 23);
             this.btn_mostrar_tareas.TabIndex = 11;
@@ -69,7 +69,7 @@
             // 
             // btn_borrar_tarea
             // 
-            this.btn_borrar_tarea.Location = new System.Drawing.Point(331, 210);
+            this.btn_borrar_tarea.Location = new System.Drawing.Point(541, 97);
             this.btn_borrar_tarea.Name = "btn_borrar_tarea";
             this.btn_borrar_tarea.Size = new System.Drawing.Size(138, 23);
             this.btn_borrar_tarea.TabIndex = 10;
@@ -79,7 +79,7 @@
             // 
             // btn_modificar_tarea
             // 
-            this.btn_modificar_tarea.Location = new System.Drawing.Point(331, 165);
+            this.btn_modificar_tarea.Location = new System.Drawing.Point(166, 186);
             this.btn_modificar_tarea.Name = "btn_modificar_tarea";
             this.btn_modificar_tarea.Size = new System.Drawing.Size(138, 23);
             this.btn_modificar_tarea.TabIndex = 9;
@@ -89,7 +89,7 @@
             // 
             // btn_nueva_tarea
             // 
-            this.btn_nueva_tarea.Location = new System.Drawing.Point(331, 120);
+            this.btn_nueva_tarea.Location = new System.Drawing.Point(166, 141);
             this.btn_nueva_tarea.Name = "btn_nueva_tarea";
             this.btn_nueva_tarea.Size = new System.Drawing.Size(138, 23);
             this.btn_nueva_tarea.TabIndex = 8;
@@ -99,7 +99,7 @@
             // 
             // btn_crear_agenda
             // 
-            this.btn_crear_agenda.Location = new System.Drawing.Point(331, 76);
+            this.btn_crear_agenda.Location = new System.Drawing.Point(166, 97);
             this.btn_crear_agenda.Name = "btn_crear_agenda";
             this.btn_crear_agenda.Size = new System.Drawing.Size(138, 23);
             this.btn_crear_agenda.TabIndex = 7;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.btn_nueva_tarea);
             this.Controls.Add(this.btn_crear_agenda);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Programa";
             this.ResumeLayout(false);
 
         }

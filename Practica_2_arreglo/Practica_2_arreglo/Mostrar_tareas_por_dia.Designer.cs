@@ -63,7 +63,7 @@
             this.descripcionDataGridViewTextBoxColumn,
             this.lugarDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tareaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(84, 182);
+            this.dataGridView1.Location = new System.Drawing.Point(107, 40);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(642, 150);
             this.dataGridView1.TabIndex = 16;
@@ -116,9 +116,9 @@
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(684, 118);
+            this.btn_buscar.Location = new System.Drawing.Point(883, 167);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
+            this.btn_buscar.Size = new System.Drawing.Size(100, 23);
             this.btn_buscar.TabIndex = 15;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
@@ -127,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(494, 122);
+            this.label3.Location = new System.Drawing.Point(850, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 14;
@@ -136,7 +136,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(268, 126);
+            this.label2.Location = new System.Drawing.Point(852, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(25, 13);
             this.label2.TabIndex = 13;
@@ -145,7 +145,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 121);
+            this.label1.Location = new System.Drawing.Point(822, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 12;
@@ -153,21 +153,21 @@
             // 
             // txt_box_mes
             // 
-            this.txt_box_mes.Location = new System.Drawing.Point(535, 119);
+            this.txt_box_mes.Location = new System.Drawing.Point(883, 134);
             this.txt_box_mes.Name = "txt_box_mes";
             this.txt_box_mes.Size = new System.Drawing.Size(100, 20);
             this.txt_box_mes.TabIndex = 11;
             // 
             // txt_box_dia
             // 
-            this.txt_box_dia.Location = new System.Drawing.Point(309, 120);
+            this.txt_box_dia.Location = new System.Drawing.Point(883, 94);
             this.txt_box_dia.Name = "txt_box_dia";
             this.txt_box_dia.Size = new System.Drawing.Size(100, 20);
             this.txt_box_dia.TabIndex = 10;
             // 
             // txt_box_id_agenda
             // 
-            this.txt_box_id_agenda.Location = new System.Drawing.Point(103, 119);
+            this.txt_box_id_agenda.Location = new System.Drawing.Point(883, 53);
             this.txt_box_id_agenda.Name = "txt_box_id_agenda";
             this.txt_box_id_agenda.Size = new System.Drawing.Size(100, 20);
             this.txt_box_id_agenda.TabIndex = 9;
@@ -180,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1053, 225);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.label3);
