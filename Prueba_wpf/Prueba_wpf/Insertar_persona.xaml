@@ -1,0 +1,24 @@
+﻿<Window x:Class="Prueba_wpf.Insertar_persona"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prueba_wpf"
+        mc:Ignorable="d"
+        Title="Insertar_persona" Height="384" Width="878">
+    <Grid>
+        <Label Content="DNI:" HorizontalAlignment="Left" Margin="141,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_box_dni" HorizontalAlignment="Left" Height="22" Margin="189,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="365,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellidos:" HorizontalAlignment="Left" Margin="611,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha de Nacimiento:" HorizontalAlignment="Left" Margin="54,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Peso:" HorizontalAlignment="Left" Margin="382,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="Altura:" HorizontalAlignment="Left" Margin="627,160,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_box_nombre" HorizontalAlignment="Left" Height="22" Margin="430,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_box_apellidos" HorizontalAlignment="Left" Height="22" Margin="673,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_box_fecha_nacimiento" HorizontalAlignment="Left" Height="22" Margin="190,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_box_peso" HorizontalAlignment="Left" Height="24" Margin="432,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_box_altura" HorizontalAlignment="Left" Height="22" Margin="677,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Insertar" HorizontalAlignment="Left" Margin="388,251,0,0" VerticalAlignment="Top" Width="75" AutomationProperties.Name="btn_insertar" Click="btn_guardar_datos_persona_Click"/>
+    </Grid>
+</Window>

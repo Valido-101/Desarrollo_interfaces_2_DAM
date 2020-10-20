@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practica_1_interfaces
+namespace Prueba_wpf
 {
-    //Clase persona que servirá para crear los objetos
     public class Persona
     {
         //Atributos

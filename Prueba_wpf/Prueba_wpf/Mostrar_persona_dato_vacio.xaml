@@ -1,0 +1,13 @@
+﻿<Window x:Class="Prueba_wpf.Mostrar_persona_dato_vacio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prueba_wpf"
+        mc:Ignorable="d"
+        Title="Mostrar_persona_dato_vacio" Height="450" Width="800" Loaded="Mostrar_persona_con_dato_vacio_Loaded">
+    <Grid>
+        <ListBox x:Name="lst_box_personas_dato_vacio" HorizontalAlignment="Left" Height="415" Margin="-4,0,0,0" VerticalAlignment="Top" Width="796" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

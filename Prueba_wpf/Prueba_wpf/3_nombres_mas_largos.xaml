@@ -1,0 +1,13 @@
+﻿<Window x:Class="Prueba_wpf._3_nombres_mas_largos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prueba_wpf"
+        mc:Ignorable="d"
+        Title="_3_nombres_mas_largos" Height="450" Width="800" Loaded="_3_nombres_mas_largos_Loaded">
+    <Grid>
+        <ListBox x:Name="lst_box_3_nombres_mas_largos" HorizontalAlignment="Left" Height="414" Margin="3,4,0,0" VerticalAlignment="Top" Width="789" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
