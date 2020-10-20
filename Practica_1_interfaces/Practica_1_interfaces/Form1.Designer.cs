@@ -103,7 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 592);
             this.Controls.Add(this.btn_salir_aplicacion);
             this.Controls.Add(this.btn_mostrar_personas_con_algun_dato_vacio);
             this.Controls.Add(this.btn_mostrar_3_nombres_mas_largos);
@@ -113,6 +113,7 @@
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Programa";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
