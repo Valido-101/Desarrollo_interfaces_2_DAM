@@ -71,11 +71,21 @@ namespace Examen_30_10_2020
                     //listbox (que a fin de cuentas es un toString de un objeto tipo Socio)
                     if (s.toString() == lstbox_socios.SelectedItem.ToString())
                     {
-                        socios.Remove(s);
+                        //Si tiene algún libro no se puede dar de baja
+                        if (s.Libros.Count == 0) 
+                        {
+                            socios.Remove(s);
 
-                        MessageBox.Show("Socio dado de baja con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Socio dado de baja con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        break;
+                            break;
+                        }
+                        else 
+                        {
+                            MessageBox.Show("No se puede dar de baja, tiene libros por devolver", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            break;
+                        }
                     }
                 }
 
