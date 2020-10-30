@@ -1,0 +1,15 @@
+C:\Users\maxus\source\repos\Practica_4\Practica_4\bin\Debug\Practica_4.exe.config
+C:\Users\maxus\source\repos\Practica_4\Practica_4\bin\Debug\Practica_4.exe
+C:\Users\maxus\source\repos\Practica_4\Practica_4\bin\Debug\Practica_4.pdb
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.csprojAssemblyReference.cache
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\MainWindow.g.cs
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\App.g.cs
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4_MarkupCompile.cache
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4_MarkupCompile.lref
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\MainWindow.baml
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.g.resources
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.Properties.Resources.resources
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.csproj.GenerateResource.cache
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.exe
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.pdb

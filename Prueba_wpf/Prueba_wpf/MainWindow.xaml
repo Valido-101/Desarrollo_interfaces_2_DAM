@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prueba_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1006.211" Width="1398.137">
-    <Grid Margin="0,0,0,0">
-        <Button Content="Insertar Persona" HorizontalAlignment="Left" VerticalAlignment="Top" Width="282" Height="20" Margin="89,54,0,0" Click="btn_insertar_persona_Click"/>
-        <Button Content="Mostrar listado de personas" HorizontalAlignment="Left" Margin="528,54,0,0" VerticalAlignment="Top" Width="282" Height="20" Click="btn_mostrar_personas_Click"/>
-        <Button x:Name="btn_consultar_persona_dni" Content="Consultar persona por DNI" HorizontalAlignment="Left" Margin="1023,56,0,0" VerticalAlignment="Top" Width="282" Height="20" Click="btn_consultar_persona_dni_Click"/>
-        <Button Content="Mostrar 3 nombres más largos" HorizontalAlignment="Left" Height="20" Margin="822,202,0,0" VerticalAlignment="Top" Width="282" Click="btn_mostrar_3_nombres_mas_largos_Click"/>
-        <Button Content="Mostrar personas con datos vacíos" HorizontalAlignment="Left" Height="20" Margin="240,203,0,0" VerticalAlignment="Top" Width="282" Click="btn_mostrar_personas_con_algun_dato_vacio_Click"/>
-        <Button Content="Salir" HorizontalAlignment="Left" Height="20" Margin="534,423,0,0" VerticalAlignment="Top" Width="282" Click="btn_salir_aplicacion_Click"/>
+        Title="MainWindow" Height="514.211" Width="1340.137" BorderBrush="#FF317681">
+    <Grid Margin="0,0,0,0" Background="White">
+        <Button Content="Insertar Persona" HorizontalAlignment="Left" VerticalAlignment="Top" Width="282" Height="24" Margin="63,104,0,0" Click="btn_insertar_persona_Click"/>
+        <Button Content="Mostrar listado de personas" HorizontalAlignment="Left" Margin="534,104,0,0" VerticalAlignment="Top" Width="282" Height="24" Click="btn_mostrar_personas_Click"/>
+        <Button x:Name="btn_consultar_persona_dni" Content="Consultar persona por DNI" HorizontalAlignment="Left" Margin="986,104,0,0" VerticalAlignment="Top" Width="282" Height="24" Click="btn_consultar_persona_dni_Click"/>
+        <Button Content="Mostrar 3 nombres más largos" HorizontalAlignment="Left" Height="24" Margin="833,226,0,0" VerticalAlignment="Top" Width="282" Click="btn_mostrar_3_nombres_mas_largos_Click"/>
+        <Button Content="Mostrar personas con datos vacíos" HorizontalAlignment="Left" Height="24" Margin="244,229,0,0" VerticalAlignment="Top" Width="282" Click="btn_mostrar_personas_con_algun_dato_vacio_Click"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Height="24" Margin="519,407,0,0" VerticalAlignment="Top" Width="282" Click="btn_salir_aplicacion_Click"/>
     </Grid>
 </Window>

@@ -78,7 +78,12 @@ namespace Prueba_wpf
 
         private void btn_salir_aplicacion_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            var salir = MessageBox.Show("¿Desea salir de la aplicación?","Salir",MessageBoxButton.YesNo);
+
+            if (salir == MessageBoxResult.Yes) 
+            {
+                this.Close();
+            }
         }
     }
 }

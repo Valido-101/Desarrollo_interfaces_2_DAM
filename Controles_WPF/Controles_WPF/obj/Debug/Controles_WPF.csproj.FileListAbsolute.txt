@@ -1,0 +1,15 @@
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\bin\Debug\Controles_WPF.exe.config
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\bin\Debug\Controles_WPF.exe
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\bin\Debug\Controles_WPF.pdb
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\App.g.cs
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF_MarkupCompile.cache
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF_MarkupCompile.lref
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\MainWindow.baml
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF.g.resources
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF.Properties.Resources.resources
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF.csproj.GenerateResource.cache
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF.exe
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF.pdb
+C:\Users\maxus\source\repos\Controles_WPF\Controles_WPF\obj\Debug\Controles_WPF.csprojAssemblyReference.cache
