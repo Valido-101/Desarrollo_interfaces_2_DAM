@@ -49,5 +49,11 @@ namespace Examen_30_10_2020
             Form_sacar_libro form_sacar_libro = new Form_sacar_libro(libros, socios);
             form_sacar_libro.Show();
         }
+
+        private void btn_devolver_libro_Click(object sender, EventArgs e)
+        {
+            Form_devolver_libro form_devolver_libro = new Form_devolver_libro(socios, libros);
+            form_devolver_libro.Show();
+        }
     }
 }

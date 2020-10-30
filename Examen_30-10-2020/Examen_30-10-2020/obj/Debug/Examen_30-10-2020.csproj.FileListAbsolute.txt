@@ -11,3 +11,4 @@ C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen
 C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30-10-2020.exe
 C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30-10-2020.pdb
 C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30_10_2020.Form_sacar_libro.resources
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30_10_2020.Form_devolver_libro.resources

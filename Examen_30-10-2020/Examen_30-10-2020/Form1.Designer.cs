@@ -72,6 +72,7 @@
             this.btn_devolver_libro.TabIndex = 3;
             this.btn_devolver_libro.Text = "Devolver Libro";
             this.btn_devolver_libro.UseVisualStyleBackColor = true;
+            this.btn_devolver_libro.Click += new System.EventHandler(this.btn_devolver_libro_Click);
             // 
             // form_inicio
             // 
