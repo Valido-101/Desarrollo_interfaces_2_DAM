@@ -1,0 +1,12 @@
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\bin\Debug\Examen_30-10-2020.exe.config
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\bin\Debug\Examen_30-10-2020.exe
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\bin\Debug\Examen_30-10-2020.pdb
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30-10-2020.csprojAssemblyReference.cache
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30_10_2020.form_inicio.resources
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30_10_2020.Form_dar_alta.resources
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30_10_2020.Form_dar_baja.resources
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30_10_2020.Properties.Resources.resources
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30-10-2020.csproj.GenerateResource.cache
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30-10-2020.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30-10-2020.exe
+C:\Users\maxus\source\repos\Examen_30-10-2020\Examen_30-10-2020\obj\Debug\Examen_30-10-2020.pdb

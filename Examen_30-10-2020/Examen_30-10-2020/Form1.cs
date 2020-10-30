@@ -31,5 +31,17 @@ namespace Examen_30_10_2020
             socios.Add(new Socio("Pilar", "Zambrana Pérez", 4, new ArrayList()));
             socios.Add(new Socio("María", "Martín Navarro", 5, new ArrayList()));
         }
+
+        private void btn_alta_usuario_Click(object sender, EventArgs e)
+        {
+            Form_dar_alta form_alta = new Form_dar_alta(socios);
+            form_alta.Show();
+        }
+
+        private void btn_baja_usuario_Click(object sender, EventArgs e)
+        {
+            Form_dar_baja form_baja = new Form_dar_baja(socios);
+            form_baja.Show();
+        }
     }
 }

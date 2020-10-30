@@ -42,6 +42,7 @@
             this.btn_alta_usuario.TabIndex = 0;
             this.btn_alta_usuario.Text = "Darse de Alta";
             this.btn_alta_usuario.UseVisualStyleBackColor = true;
+            this.btn_alta_usuario.Click += new System.EventHandler(this.btn_alta_usuario_Click);
             // 
             // btn_baja_usuario
             // 
@@ -51,6 +52,7 @@
             this.btn_baja_usuario.TabIndex = 1;
             this.btn_baja_usuario.Text = "Darse de Baja";
             this.btn_baja_usuario.UseVisualStyleBackColor = true;
+            this.btn_baja_usuario.Click += new System.EventHandler(this.btn_baja_usuario_Click);
             // 
             // btn_sacar_libro
             // 

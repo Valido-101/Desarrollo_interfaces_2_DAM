@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtbox_nombre = new System.Windows.Forms.TextBox();
+            this.txtbox_apellidos = new System.Windows.Forms.TextBox();
             this.btn_aceptar_alta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtbox_nombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtbox_nombre.Location = new System.Drawing.Point(108, 28);
+            this.txtbox_nombre.Name = "txtbox_nombre";
+            this.txtbox_nombre.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_nombre.TabIndex = 0;
             // 
-            // textBox2
+            // txtbox_apellidos
             // 
-            this.textBox2.Location = new System.Drawing.Point(108, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtbox_apellidos.Location = new System.Drawing.Point(108, 79);
+            this.txtbox_apellidos.Name = "txtbox_apellidos";
+            this.txtbox_apellidos.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_apellidos.TabIndex = 1;
             // 
             // btn_aceptar_alta
             // 
@@ -57,6 +57,7 @@
             this.btn_aceptar_alta.TabIndex = 2;
             this.btn_aceptar_alta.Text = "Dar de Alta";
             this.btn_aceptar_alta.UseVisualStyleBackColor = true;
+            this.btn_aceptar_alta.Click += new System.EventHandler(this.btn_aceptar_alta_Click);
             // 
             // label1
             // 
@@ -84,8 +85,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_aceptar_alta);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbox_apellidos);
+            this.Controls.Add(this.txtbox_nombre);
             this.Name = "Form_dar_alta";
             this.Text = "Darse de Alta";
             this.ResumeLayout(false);
@@ -95,8 +96,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtbox_nombre;
+        private System.Windows.Forms.TextBox txtbox_apellidos;
         private System.Windows.Forms.Button btn_aceptar_alta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

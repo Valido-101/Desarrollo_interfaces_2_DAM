@@ -89,6 +89,7 @@
             this.Controls.Add(this.lstbox_socios);
             this.Name = "Form_dar_baja";
             this.Text = "Darse de Baja";
+            this.Load += new System.EventHandler(this.Form_dar_baja_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
