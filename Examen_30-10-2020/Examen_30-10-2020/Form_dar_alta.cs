@@ -16,12 +16,16 @@ namespace Examen_30_10_2020
 
         ArrayList socios;
 
+        //Constructor que recibe por parámetros un ArrayList de socios
         public Form_dar_alta(ArrayList socios)
         {
             this.socios = socios;
             InitializeComponent();
         }
 
+        //Al darle click al botón, se añade un nuevo elemento al ArrayList de socios. El id será
+        //el del último socio que se haya introducido + 1, para que no se repitan y se incremente
+        //automáticamente. También se informa al usuario de que se ha realizado con éxito.
         private void btn_aceptar_alta_Click(object sender, EventArgs e)
         {
             Socio s = (Socio)socios[socios.Count - 1];
