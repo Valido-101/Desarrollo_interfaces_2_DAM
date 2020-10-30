@@ -9,10 +9,10 @@ namespace Examen_30_10_2020
 {
     public class Socio
     {
-        string nombre;
-        string apellidos;
-        int id_socio;
-        ArrayList libros;
+        private string nombre;
+        private string apellidos;
+        private int id_socio;
+        private ArrayList libros;
 
         public Socio(string nombre, string apellidos, int id_socio, ArrayList libros) 
         {

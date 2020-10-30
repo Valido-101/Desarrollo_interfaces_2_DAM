@@ -62,6 +62,7 @@
             this.btn_sacar_libro.TabIndex = 2;
             this.btn_sacar_libro.Text = "Sacar Libro";
             this.btn_sacar_libro.UseVisualStyleBackColor = true;
+            this.btn_sacar_libro.Click += new System.EventHandler(this.btn_sacar_libro_Click);
             // 
             // btn_devolver_libro
             // 

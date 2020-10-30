@@ -8,9 +8,9 @@ namespace Examen_30_10_2020
 {
     public class Libro
     {
-        string iban;
-        string titulo;
-        string autor;
+        private string iban;
+        private string titulo;
+        private string autor;
 
         public Libro(string iban, string titulo, string autor) 
         {
@@ -26,6 +26,11 @@ namespace Examen_30_10_2020
         public string toString() 
         {
             return "IBAN: " + iban + ", Autor: " + autor + ", Título: " + titulo;
+        }
+
+        public string toStringTitulo() 
+        {
+            return "Título: " + titulo;
         }
     }
 }
