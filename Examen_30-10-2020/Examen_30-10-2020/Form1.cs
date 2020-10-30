@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Examen_30_10_2020
 {
-    public partial class Form1 : Form
+    public partial class form_inicio : Form
     {
-        public Form1()
+        public form_inicio()
         {
             InitializeComponent();
         }
