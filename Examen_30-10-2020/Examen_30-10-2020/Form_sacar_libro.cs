@@ -83,7 +83,7 @@ namespace Examen_30_10_2020
                     //La condición que debe cumplirse para que se borre el objeto es que el toString
                     //del objeto actual del foreach coincida con lo que se ha seleccionado en el
                     //listbox (que a fin de cuentas es un toString de un objeto tipo Socio)
-                    if (l.toString() == lstbox_libros.SelectedItem.ToString())
+                    if (l.toStringTitulo() == lstbox_libros.SelectedItem.ToString())
                     {
                         foreach (Socio s in socios)
                         {
@@ -95,7 +95,7 @@ namespace Examen_30_10_2020
                                 s.Libros.Add(l);
                                 libros.Remove(l);
 
-                                MessageBox.Show("Libro "+l.Titulo+" prestado con éxito a "+s.Nombre+" "+s.Apellidos, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("Libro '"+l.Titulo+"' prestado con éxito a "+s.Nombre+" "+s.Apellidos, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                 break;
                             }
@@ -105,7 +105,9 @@ namespace Examen_30_10_2020
                     }
                 }
 
-                this.Close();
+                lstbox_libros.Items.Clear();
+                lstbox_socios.Items.Clear();
+                Form_sacar_libro_Load(sender, e);
 
             }
             else
