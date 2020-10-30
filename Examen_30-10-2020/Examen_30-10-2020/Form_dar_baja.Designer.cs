@@ -30,7 +30,7 @@
         {
             this.lstbox_socios = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbox_buscar_nombre_apellido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_aceptar_baja = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -52,12 +52,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Socios:";
             // 
-            // textBox1
+            // txtbox_buscar_nombre_apellido
             // 
-            this.textBox1.Location = new System.Drawing.Point(350, 147);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtbox_buscar_nombre_apellido.Location = new System.Drawing.Point(350, 147);
+            this.txtbox_buscar_nombre_apellido.Name = "txtbox_buscar_nombre_apellido";
+            this.txtbox_buscar_nombre_apellido.Size = new System.Drawing.Size(100, 20);
+            this.txtbox_buscar_nombre_apellido.TabIndex = 2;
+            this.txtbox_buscar_nombre_apellido.TextChanged += new System.EventHandler(this.txtbox_buscar_nombre_apellido_TextChanged);
             // 
             // label2
             // 
@@ -76,6 +77,7 @@
             this.btn_aceptar_baja.TabIndex = 4;
             this.btn_aceptar_baja.Text = "Dar de Baja";
             this.btn_aceptar_baja.UseVisualStyleBackColor = true;
+            this.btn_aceptar_baja.Click += new System.EventHandler(this.btn_aceptar_baja_Click);
             // 
             // Form_dar_baja
             // 
@@ -84,7 +86,7 @@
             this.ClientSize = new System.Drawing.Size(651, 320);
             this.Controls.Add(this.btn_aceptar_baja);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbox_buscar_nombre_apellido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstbox_socios);
             this.Name = "Form_dar_baja";
@@ -99,7 +101,7 @@
 
         private System.Windows.Forms.ListBox lstbox_socios;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbox_buscar_nombre_apellido;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_aceptar_baja;
     }
