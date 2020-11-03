@@ -28,7 +28,7 @@ namespace Examen_30_10_2020
         {
             foreach (Socio s in socios)
             {
-                lstbox_socios.Items.Add(s.toString());
+                lstbox_socios.Items.Add(s.ToString());
             }
 
             foreach (Libro l in libros)
@@ -62,13 +62,13 @@ namespace Examen_30_10_2020
             {
                 if (s.Nombre.Contains(txtbox_buscar_socio.Text))
                 {
-                    lstbox_socios.Items.Add(s.toString());
+                    lstbox_socios.Items.Add(s.ToString());
                 }
                 else
                 {
                     if (s.Apellidos.Contains(txtbox_buscar_socio.Text))
                     {
-                        lstbox_socios.Items.Add(s.toString());
+                        lstbox_socios.Items.Add(s.ToString());
                     }
                 }
             }
@@ -90,7 +90,7 @@ namespace Examen_30_10_2020
                             //La condición que debe cumplirse para que se borre el objeto es que el toString
                             //del objeto actual del foreach coincida con lo que se ha seleccionado en el
                             //listbox (que a fin de cuentas es un toString de un objeto tipo Socio)
-                            if (s.toString() == lstbox_socios.SelectedItem.ToString())
+                            if (s.ToString() == lstbox_socios.SelectedItem.ToString())
                             {
                                 s.Libros.Add(l);
                                 libros.Remove(l);

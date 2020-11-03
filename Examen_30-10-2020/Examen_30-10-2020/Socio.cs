@@ -27,7 +27,7 @@ namespace Examen_30_10_2020
         public int Id_socio { get => id_socio; set => id_socio = value; }
         public ArrayList Libros { get => libros; set => libros = value; }
 
-        public string toString() 
+        override public string ToString() 
         {
             return "Nombre: " + nombre + ", Apellidos: " + apellidos;
         }

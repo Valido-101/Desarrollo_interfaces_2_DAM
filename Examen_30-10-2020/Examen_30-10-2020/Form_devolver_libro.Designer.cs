@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.datagrid_socios = new System.Windows.Forms.DataGridView();
             this.btn_devolver_libros = new System.Windows.Forms.Button();
-            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_socios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +42,7 @@
             this.datagrid_socios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid_socios.Location = new System.Drawing.Point(47, 97);
             this.datagrid_socios.Name = "datagrid_socios";
+            this.datagrid_socios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid_socios.Size = new System.Drawing.Size(344, 150);
             this.datagrid_socios.TabIndex = 0;
             // 
@@ -55,10 +56,6 @@
             this.btn_devolver_libros.UseVisualStyleBackColor = true;
             this.btn_devolver_libros.Click += new System.EventHandler(this.btn_devolver_libros_Click);
             // 
-            // socioBindingSource
-            // 
-            this.socioBindingSource.DataSource = typeof(Examen_30_10_2020.Socio);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -67,6 +64,10 @@
             this.label1.Size = new System.Drawing.Size(244, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Seleccione un socio para que devuelva sus libros:";
+            // 
+            // socioBindingSource
+            // 
+            this.socioBindingSource.DataSource = typeof(Examen_30_10_2020.Socio);
             // 
             // Form_devolver_libro
             // 

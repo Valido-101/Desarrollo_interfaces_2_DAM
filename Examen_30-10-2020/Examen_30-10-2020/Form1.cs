@@ -25,11 +25,13 @@ namespace Examen_30_10_2020
             libros.Add(new Libro("3", "Por qué España sigue molando", "Santiago Abascal"));
             libros.Add(new Libro("4", "Cómo armar un misil en 657 sencillos pasos", "Kim Jong Un"));
             libros.Add(new Libro("5", "La Vida de Un Borderline", "Amador Rivas"));
+            libros.Add(new Libro("6", "Las Lágrimas de Shiva", "César Mallorquí"));
             socios.Add(new Socio("Juan","Valido Vázquez",1,new ArrayList()));
             socios.Add(new Socio("Fernando", "García Sánchez", 2, new ArrayList()));
             socios.Add(new Socio("Francisco Javier", "Gómez Bru", 3, new ArrayList()));
             socios.Add(new Socio("Pilar", "Zambrana Pérez", 4, new ArrayList()));
             socios.Add(new Socio("María", "Martín Navarro", 5, new ArrayList()));
+            socios.Add(new Socio("Ana","Martín Sánchez",6,new ArrayList()));
         }
 
         private void btn_alta_usuario_Click(object sender, EventArgs e)

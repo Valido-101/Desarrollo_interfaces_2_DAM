@@ -13,3 +13,7 @@ C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.csproj.Ge
 C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.csproj.CoreCompileInputs.cache
 C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.exe
 C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Practica_4.pdb
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Mensaje_reserva_compra.g.cs
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Mensaje_reserva_compra.baml
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Cancelar_compra_reserva.g.cs
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Cancelar_compra_reserva.baml
