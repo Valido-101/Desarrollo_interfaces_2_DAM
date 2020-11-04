@@ -21,22 +21,26 @@ namespace Practica_4
     {
 
         Button btn;
+        Sala sala_seleccionada;
 
-        public Mensaje_reserva_compra(Button btn)
+        public Mensaje_reserva_compra(Button btn, Sala sala_seleccionada)
         {
             InitializeComponent();
             this.btn = btn;
+            this.sala_seleccionada = sala_seleccionada;
         }
 
         private void btn_comprar_Click(object sender, RoutedEventArgs e)
         {
             btn.Background = Brushes.Black;
+            sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true));
             this.Close();
         }
 
         private void btn_reservar_Click(object sender, RoutedEventArgs e)
         {
             btn.Background = Brushes.Yellow;
+            sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false));
             this.Close();
         }
     }

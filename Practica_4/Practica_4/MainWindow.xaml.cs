@@ -25,25 +25,31 @@ namespace Practica_4
     {
         ArrayList salas = new ArrayList();
         ArrayList botones = new ArrayList();
-        bool compra;
+        Sala sala_seleccionada;
 
         public MainWindow()
         {
             InitializeComponent();
 
             salas.Add(new Sala("Cyrano de Bergerac", "26/06/2021", "20:00"));
+            salas.Add(new Sala("Romeo y Julieta", "27/06/2021", "22:00"));
         }
 
         private void Ventana_Inicio_Loaded(object sender, RoutedEventArgs e)
         {
-            int pos_arrayList = 0;
-
             foreach(Sala s in salas) 
             {
-                lst_box_salas.Items.Add(s.Nombre_evento);
+                lst_box_salas.Items.Add(s);
             }
+        }
 
-            for(int x = 0; x < 100; x++) 
+        private void lst_box_salas_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            botones.Clear();
+
+            sala_seleccionada = (Sala)lst_box_salas.SelectedItem;
+
+            for (int x = 0; x < 100; x++)
             {
                 botones.Add(new Button());
                 Button btn = (Button)botones[x];
@@ -53,27 +59,36 @@ namespace Practica_4
                 Grid_asientos.Children.Add((Button)botones[x]);
             }
 
-            for (int x = 1; x <= 10; x++) 
+            int pos_arrayList = 0;
+
+            for (int x = 1; x <= 10; x++)
             {
-                for (int y = 1; y <= 10; y++) 
+                for (int y = 1; y <= 10; y++)
                 {
 
-                    Grid.SetRow((Button)botones[pos_arrayList],x);
+                    foreach(Asiento a in sala_seleccionada.Asientos) 
+                    {
+                        if(a.Fila==x && a.Columna == y) 
+                        {
+                            Button btn = (Button)botones[pos_arrayList];
+                            if (a.Estado == "Ocupado") 
+                            {
+                                btn.Background = Brushes.Black;
+                            }
+                            else 
+                            {
+                                if (a.Estado == "Reservado") 
+                                {
+                                    btn.Background = Brushes.Yellow;
+                                }
+                            }
+                        }
+                    }
+
+                    Grid.SetRow((Button)botones[pos_arrayList], x);
                     Grid.SetColumn((Button)botones[pos_arrayList], y);
                     pos_arrayList++;
 
-                }
-            }
-            
-        }
-
-        private void lst_box_salas_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            foreach(Sala s in salas) 
-            {
-                if (s.Nombre_evento == Convert.ToString(lst_box_salas.SelectedItem)) 
-                {
-                    MessageBox.Show("Hola");
                 }
             }
         }
@@ -85,10 +100,18 @@ namespace Practica_4
             {
                 Cancelar_compra_reserva cancelacion = new Cancelar_compra_reserva(btn);
                 cancelacion.Show();
+                foreach(Asiento a in sala_seleccionada.Asientos) 
+                {
+                    if(a.Fila==Grid.GetRow(btn) && a.Columna == Grid.GetColumn(btn)) 
+                    {
+                        sala_seleccionada.Asientos.Remove(a);
+                        break;
+                    }
+                }
             }
             else 
             {
-                Mensaje_reserva_compra confirmacion = new Mensaje_reserva_compra(btn);
+                Mensaje_reserva_compra confirmacion = new Mensaje_reserva_compra(btn, sala_seleccionada);
                 confirmacion.Show();
             }
         }

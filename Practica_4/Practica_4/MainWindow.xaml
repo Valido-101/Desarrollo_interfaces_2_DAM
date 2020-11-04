@@ -15,7 +15,7 @@
         <Canvas x:Name="canvas_salas" Grid.Column="1" Background="#FF5F0303">
             <Canvas Width="400" Height="100" Canvas.Top="50" Canvas.Left="100" Background="#FF444444">
                 <Label Content="Escenario" FontSize="50" Canvas.Top="11" Canvas.Left="90"/>
-                <Grid Canvas.Top="150" Width="500" Height="200" x:Name="Grid_asientos" Canvas.Right="-50">
+                <Grid Canvas.Top="150" Width="500" Height="200" x:Name="Grid_asientos" Canvas.Left="-50">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -43,15 +43,16 @@
                     </Grid.RowDefinitions>
                 </Grid>
             </Canvas>
-            <Label Content="Ocupado" Canvas.Left="115" Canvas.Top="160"/>
-            <Label Content="Reservado" Canvas.Left="250" Canvas.Top="160"/>
-            <Label Content="Libre" Canvas.Left="380" Canvas.Top="160"/>
-            <Label Content="   " Canvas.Left="90" Canvas.Top="160" Background="Black" Height="20"/>
-            <Label Content="   " Canvas.Left="220" Canvas.Top="160" Background="Yellow" Height="20"/>
-            <Label Content="   " Canvas.Left="350" Canvas.Top="160" Background="White" Height="20"/>
+            <Label Content="Ocupado" Canvas.Left="155" Canvas.Top="160"/>
+            <Label Content="Reservado" Canvas.Left="300" Canvas.Top="160"/>
+            <Label Content="Libre" Canvas.Left="450" Canvas.Top="160"/>
+            <Label Content="   " Canvas.Left="130" Canvas.Top="160" Background="Black" Height="20"/>
+            <Label Content="   " Canvas.Left="270" Canvas.Top="160" Background="Yellow" Height="20"/>
+            <Label Content="   " Canvas.Left="420" Canvas.Top="160" Background="White" Height="20"/>
         </Canvas>
-        <DockPanel Grid.Column="0" LastChildFill="True">
-            <ListBox x:Name="lst_box_salas" Height="418" Margin="0,0,0,0" VerticalAlignment="Top" Width="197" Background="#FF8B0606" BorderBrush="#FF8B0606" FontSize="18" FontWeight="Bold" MouseDoubleClick="lst_box_salas_MouseDoubleClick"/>
-        </DockPanel>
+        <StackPanel Grid.Column="0">
+            <Label FontSize="10" FontWeight="Bold">Por favor, haga doble click en una sala:</Label>
+            <ListBox x:Name="lst_box_salas" Height="390" Margin="0,0,0,0" Width="197" Background="#FF8B0606" BorderBrush="#FF8B0606" FontSize="18" FontWeight="Bold" MouseDoubleClick="lst_box_salas_MouseDoubleClick"/>
+        </StackPanel>
     </Grid>
 </Window>

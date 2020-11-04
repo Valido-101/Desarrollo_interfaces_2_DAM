@@ -31,5 +31,10 @@ namespace Practica_4
         {
             asientos.Add(a);
         }
+
+        override public String ToString() 
+        {
+            return Nombre_evento;
+        }
     }
 }
