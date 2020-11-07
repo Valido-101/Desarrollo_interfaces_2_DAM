@@ -13,8 +13,8 @@
             <ColumnDefinition Width="1.5*"/>
         </Grid.ColumnDefinitions>
         <Canvas x:Name="canvas_salas" Grid.Column="1" Background="#FF5F0303">
-            <Canvas Width="400" Height="100" Canvas.Top="50" Canvas.Left="100" Background="#FF444444">
-                <Label Content="Escenario" FontSize="50" Canvas.Top="11" Canvas.Left="90"/>
+            <Canvas x:Name="canvas_escenario" Width="400" Height="100" Canvas.Top="50" Canvas.Left="100" Background="#FF444444" Visibility="Hidden">
+                <Label x:Name="label_escenario" Content="Escenario" FontSize="50" Canvas.Top="11" Canvas.Left="90"/>
                 <Grid Canvas.Top="150" Width="500" Height="200" x:Name="Grid_asientos" Canvas.Left="-50">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -43,12 +43,12 @@
                     </Grid.RowDefinitions>
                 </Grid>
             </Canvas>
-            <Label Content="Ocupado" Canvas.Left="155" Canvas.Top="160"/>
-            <Label Content="Reservado" Canvas.Left="300" Canvas.Top="160"/>
-            <Label Content="Libre" Canvas.Left="450" Canvas.Top="160"/>
-            <Label Content="   " Canvas.Left="130" Canvas.Top="160" Background="Red" Height="20"/>
-            <Label Content="   " Canvas.Left="270" Canvas.Top="160" Background="Yellow" Height="20"/>
-            <Label Content="   " Canvas.Left="420" Canvas.Top="160" Background="White" Height="20"/>
+            <Label x:Name="label_ocupado" Content="Ocupado" Canvas.Left="155" Canvas.Top="160" Visibility="Hidden"/>
+            <Label x:Name="label_reservado" Content="Reservado" Canvas.Left="300" Canvas.Top="160" Visibility="Hidden"/>
+            <Label x:Name="label_libre" Content="Libre" Canvas.Left="450" Canvas.Top="160" Visibility="Hidden"/>
+            <Label x:Name="label_color_ocupado" Content="   " Canvas.Left="130" Canvas.Top="160" Background="Red" Height="20" Visibility="Hidden"/>
+            <Label x:Name="label_color_reservado" Content="   " Canvas.Left="270" Canvas.Top="160" Background="Yellow" Height="20" Visibility="Hidden"/>
+            <Label x:Name="label_color_libre" Content="   " Canvas.Left="420" Canvas.Top="160" Background="White" Height="20" Visibility="Hidden"/>
             <Label x:Name="label_fecha" FontWeight="Bold" Content="" Canvas.Left="59" Canvas.Top="12"/>
             <Label x:Name="label_hora" FontWeight="Bold" Content="" Canvas.Left="212" Canvas.Top="12"/>
         </Canvas>

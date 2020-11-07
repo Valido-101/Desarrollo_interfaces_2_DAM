@@ -17,3 +17,5 @@ C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Mensaje_reserva_comp
 C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Mensaje_reserva_compra.baml
 C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Cancelar_compra_reserva.g.cs
 C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Cancelar_compra_reserva.baml
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Confimar_cancelacion.g.cs
+C:\Users\maxus\source\repos\Practica_4\Practica_4\obj\Debug\Confimar_cancelacion.baml

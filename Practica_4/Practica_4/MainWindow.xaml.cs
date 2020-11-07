@@ -53,6 +53,14 @@ namespace Practica_4
             label_fecha.FontSize = 15;
             label_hora.Content = "Hora: " + sala_seleccionada.Hora;
             label_hora.FontSize = 15;
+            canvas_escenario.Visibility = Visibility.Visible;
+            label_escenario.Visibility = Visibility.Visible;
+            label_color_ocupado.Visibility = Visibility.Visible;
+            label_ocupado.Visibility = Visibility.Visible;
+            label_color_reservado.Visibility = Visibility.Visible;
+            label_reservado.Visibility = Visibility.Visible;
+            label_color_libre.Visibility = Visibility.Visible;
+            label_libre.Visibility = Visibility.Visible;
 
             MessageBox.Show("Para comprar o reservar un asiento, haga click sobre uno de los asientos.","Compra o reserva de asientos",MessageBoxButton.OK,MessageBoxImage.Information);
 
@@ -104,18 +112,10 @@ namespace Practica_4
         private void btnClick(object sender, EventArgs e) 
         {
             Button btn = (Button)sender;
-            if (btn.Background == Brushes.Black || btn.Background == Brushes.Yellow)
+            if (btn.Background == Brushes.Red || btn.Background == Brushes.Yellow)
             {
-                Cancelar_compra_reserva cancelacion = new Cancelar_compra_reserva(btn);
+                Cancelar_compra_reserva cancelacion = new Cancelar_compra_reserva(btn, sala_seleccionada);
                 cancelacion.Show();
-                foreach(Asiento a in sala_seleccionada.Asientos) 
-                {
-                    if(a.Fila==Grid.GetRow(btn) && a.Columna == Grid.GetColumn(btn)) 
-                    {
-                        sala_seleccionada.Asientos.Remove(a);
-                        break;
-                    }
-                }
             }
             else 
             {

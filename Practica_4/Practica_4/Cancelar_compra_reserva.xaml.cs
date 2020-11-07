@@ -20,11 +20,13 @@ namespace Practica_4
     public partial class Cancelar_compra_reserva : Window
     {
         Button btn1;
+        Sala sala_seleccionada;
 
-        public Cancelar_compra_reserva(Button btn1)
+        public Cancelar_compra_reserva(Button btn1, Sala sala_seleccionada)
         {
             InitializeComponent();
             this.btn1 = btn1;
+            this.sala_seleccionada = sala_seleccionada;
             if (btn1.Background == Brushes.Red)
             {
                 texto_mensaje.Content = "¿Desea cancelar la compra?";
@@ -37,7 +39,9 @@ namespace Practica_4
 
         private void btn_si_Click(object sender, RoutedEventArgs e)
         {
-            btn1.Background = Brushes.White;
+            Confimar_cancelacion conf_canc = new Confimar_cancelacion(btn1, sala_seleccionada);
+            conf_canc.Show();
+            //btn1.Background = Brushes.White;
             this.Close();
         }
 

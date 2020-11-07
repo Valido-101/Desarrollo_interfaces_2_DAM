@@ -59,11 +59,18 @@
     <Compile Include="Cancelar_compra_reserva.xaml.cs">
       <DependentUpon>Cancelar_compra_reserva.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Confimar_cancelacion.xaml.cs">
+      <DependentUpon>Confimar_cancelacion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mensaje_reserva_compra.xaml.cs">
       <DependentUpon>Mensaje_reserva_compra.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sala.cs" />
     <Page Include="Cancelar_compra_reserva.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Confimar_cancelacion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
