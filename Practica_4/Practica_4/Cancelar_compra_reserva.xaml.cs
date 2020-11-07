@@ -25,7 +25,7 @@ namespace Practica_4
         {
             InitializeComponent();
             this.btn1 = btn1;
-            if (btn1.Background == Brushes.Black)
+            if (btn1.Background == Brushes.Red)
             {
                 texto_mensaje.Content = "¿Desea cancelar la compra?";
             }

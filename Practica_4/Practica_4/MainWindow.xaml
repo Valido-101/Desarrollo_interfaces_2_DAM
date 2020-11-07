@@ -46,9 +46,11 @@
             <Label Content="Ocupado" Canvas.Left="155" Canvas.Top="160"/>
             <Label Content="Reservado" Canvas.Left="300" Canvas.Top="160"/>
             <Label Content="Libre" Canvas.Left="450" Canvas.Top="160"/>
-            <Label Content="   " Canvas.Left="130" Canvas.Top="160" Background="Black" Height="20"/>
+            <Label Content="   " Canvas.Left="130" Canvas.Top="160" Background="Red" Height="20"/>
             <Label Content="   " Canvas.Left="270" Canvas.Top="160" Background="Yellow" Height="20"/>
             <Label Content="   " Canvas.Left="420" Canvas.Top="160" Background="White" Height="20"/>
+            <Label x:Name="label_fecha" FontWeight="Bold" Content="" Canvas.Left="59" Canvas.Top="12"/>
+            <Label x:Name="label_hora" FontWeight="Bold" Content="" Canvas.Left="212" Canvas.Top="12"/>
         </Canvas>
         <StackPanel Grid.Column="0">
             <Label FontSize="10" FontWeight="Bold">Por favor, haga doble click en una sala:</Label>

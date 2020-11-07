@@ -32,15 +32,19 @@ namespace Practica_4
 
         private void btn_comprar_Click(object sender, RoutedEventArgs e)
         {
-            btn.Background = Brushes.Black;
-            sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true));
+            btn.Background = Brushes.Red;
+            string id_compra = btn.Content + "_compra_" + sala_seleccionada.Nombre_evento;
+            sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true, id_compra));
+            MessageBox.Show("Su id de compra es el siguiente: " + id_compra+". Guárdelo para poder cancelar la compra en caso de ser necesario.", "Compra realizada con éxito", MessageBoxButton.OK);
             this.Close();
         }
 
         private void btn_reservar_Click(object sender, RoutedEventArgs e)
         {
             btn.Background = Brushes.Yellow;
-            sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false));
+            string id_compra = btn.Content + "_reserva_" + sala_seleccionada.Nombre_evento;
+            sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false, id_compra));
+            MessageBox.Show("Su id de reserva es el siguiente: " + id_compra + ". Guárdelo para poder cancelar la reserva en caso de ser necesario.", "Reserva realizada con éxito", MessageBoxButton.OK);
             this.Close();
         }
     }

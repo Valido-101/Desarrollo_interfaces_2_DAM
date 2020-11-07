@@ -49,6 +49,13 @@ namespace Practica_4
 
             sala_seleccionada = (Sala)lst_box_salas.SelectedItem;
 
+            label_fecha.Content = "Fecha: "+sala_seleccionada.Fecha;
+            label_fecha.FontSize = 15;
+            label_hora.Content = "Hora: " + sala_seleccionada.Hora;
+            label_hora.FontSize = 15;
+
+            MessageBox.Show("Para comprar o reservar un asiento, haga click sobre uno de los asientos.","Compra o reserva de asientos",MessageBoxButton.OK,MessageBoxImage.Information);
+
             for (int x = 0; x < 100; x++)
             {
                 botones.Add(new Button());
@@ -73,7 +80,7 @@ namespace Practica_4
                             Button btn = (Button)botones[pos_arrayList];
                             if (a.Estado == "Ocupado") 
                             {
-                                btn.Background = Brushes.Black;
+                                btn.Background = Brushes.Red;
                             }
                             else 
                             {
@@ -87,6 +94,7 @@ namespace Practica_4
 
                     Grid.SetRow((Button)botones[pos_arrayList], x);
                     Grid.SetColumn((Button)botones[pos_arrayList], y);
+                    ((Button)botones[pos_arrayList]).Content = x + "." + y;
                     pos_arrayList++;
 
                 }
