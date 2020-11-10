@@ -1,0 +1,15 @@
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\bin\Debug\Prueba_menu.exe.config
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\bin\Debug\Prueba_menu.exe
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\bin\Debug\Prueba_menu.pdb
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu.csprojAssemblyReference.cache
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\MainWindow.g.cs
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\App.g.cs
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu_MarkupCompile.cache
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu_MarkupCompile.lref
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\MainWindow.baml
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu.g.resources
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu.Properties.Resources.resources
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu.csproj.GenerateResource.cache
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu.exe
+C:\Users\maxus\source\repos\Prueba_menu\Prueba_menu\obj\Debug\Prueba_menu.pdb

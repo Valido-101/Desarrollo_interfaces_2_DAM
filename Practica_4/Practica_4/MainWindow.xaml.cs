@@ -41,6 +41,18 @@ namespace Practica_4
             {
                 lst_box_salas.Items.Add(s);
             }
+
+            Grid_asientos.ColumnDefinitions.Clear();
+            Grid_asientos.RowDefinitions.Clear();
+
+            for(int x = 0; x < 10; x++) 
+            {
+                Grid_asientos.ColumnDefinitions.Add(new ColumnDefinition());
+            }
+            for (int x = 0; x < 10; x++)
+            {
+                Grid_asientos.RowDefinitions.Add(new RowDefinition());
+            }
         }
 
         private void lst_box_salas_MouseDoubleClick(object sender, MouseButtonEventArgs e)
