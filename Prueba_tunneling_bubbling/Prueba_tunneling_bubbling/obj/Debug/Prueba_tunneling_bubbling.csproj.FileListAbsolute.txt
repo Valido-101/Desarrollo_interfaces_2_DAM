@@ -1,0 +1,15 @@
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\bin\Debug\Prueba_tunneling_bubbling.exe.config
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\bin\Debug\Prueba_tunneling_bubbling.exe
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\bin\Debug\Prueba_tunneling_bubbling.pdb
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling.csprojAssemblyReference.cache
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\MainWindow.g.cs
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\App.g.cs
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling_MarkupCompile.cache
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling_MarkupCompile.lref
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\MainWindow.baml
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling.g.resources
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling.Properties.Resources.resources
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling.csproj.GenerateResource.cache
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling.exe
+C:\Users\maxus\source\repos\Prueba_tunneling_bubbling\Prueba_tunneling_bubbling\obj\Debug\Prueba_tunneling_bubbling.pdb

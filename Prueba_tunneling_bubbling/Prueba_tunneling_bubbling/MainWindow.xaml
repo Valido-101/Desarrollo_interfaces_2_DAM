@@ -1,0 +1,26 @@
+﻿<Window x:Class="Prueba_tunneling_bubbling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prueba_tunneling_bubbling"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btn_contenedor" PreviewMouseLeftButtonDown="onClickContenedor">
+            <Grid Width="100" Height="100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Background="Black" PreviewMouseLeftButtonDown="onClickContenido" x:Name="btn_contenido">
+                    
+                </Button>
+            </Grid>
+        </Button>
+    </Grid>
+</Window>
