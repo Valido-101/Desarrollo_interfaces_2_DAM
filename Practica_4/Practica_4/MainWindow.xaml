@@ -16,31 +16,7 @@
             <Canvas x:Name="canvas_escenario" Width="400" Height="100" Canvas.Top="50" Canvas.Left="100" Background="#FF444444" Visibility="Hidden">
                 <Label x:Name="label_escenario" Content="Escenario" FontSize="50" Canvas.Top="11" Canvas.Left="90"/>
                 <Grid Canvas.Top="150" Width="500" Height="200" x:Name="Grid_asientos" Canvas.Left="-50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
+                    
                 </Grid>
             </Canvas>
             <Label x:Name="label_ocupado" Content="Ocupado" Canvas.Left="155" Canvas.Top="160" Visibility="Hidden"/>
