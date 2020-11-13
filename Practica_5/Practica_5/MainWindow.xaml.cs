@@ -26,6 +26,7 @@ namespace Practica_5
         ArrayList salas = new ArrayList();
         ArrayList botones = new ArrayList();
         Sala sala_seleccionada;
+        ContextMenu context_menu;
 
         public MainWindow()
         {

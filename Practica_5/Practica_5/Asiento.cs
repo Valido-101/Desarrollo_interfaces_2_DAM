@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica_5
 {
-    class Asiento
+    public class Asiento
     {
         private int fila;
         private int columna;

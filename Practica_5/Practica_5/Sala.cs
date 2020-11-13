@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica_5
 {
-    class Sala
+    public class Sala
     {
         private string nombre_evento;
         private string fecha;
