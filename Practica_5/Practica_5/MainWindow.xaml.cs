@@ -23,21 +23,25 @@ namespace Practica_5
     /// </summary>
     public partial class MainWindow : Window
     {
-        ArrayList salas = new ArrayList();
+        ArrayList salas;
         ArrayList botones = new ArrayList();
         Sala sala_seleccionada;
         ContextMenu context_menu;
+        Ventana_inicio ventana_inicio;
 
-        public MainWindow()
+        public MainWindow(ArrayList salas, Ventana_inicio ventana_inicio)
         {
             InitializeComponent();
 
-            salas.Add(new Sala("Cyrano de Bergerac", "26/06/2021", "20:00"));
-            salas.Add(new Sala("Romeo y Julieta", "27/06/2021", "22:00"));
+            this.salas = salas;
+            context_menu = new ContextMenu();
+            this.ventana_inicio = ventana_inicio;
         }
 
         private void Ventana_Inicio_Loaded(object sender, RoutedEventArgs e)
         {
+            lst_box_salas.Items.Clear();
+
             foreach(Sala s in salas) 
             {
                 lst_box_salas.Items.Add(s);
@@ -74,21 +78,23 @@ namespace Practica_5
 
             MessageBox.Show("Para comprar o reservar un asiento, haga click sobre uno de los asientos.","Compra o reserva de asientos",MessageBoxButton.OK,MessageBoxImage.Information);
 
-            for (int x = 0; x < 100; x++)
+            int total_asientos = sala_seleccionada.Filas * sala_seleccionada.Columnas;
+
+            for (int x = 0; x < total_asientos; x++)
             {
                 botones.Add(new Button());
                 Button btn = (Button)botones[x];
                 btn.Background = Brushes.White;
                 btn.BorderBrush = Brushes.Black;
-                btn.Click += btnClick;
+                btn.Click += context_menu_enable;
                 Grid_asientos.Children.Add((Button)botones[x]);
             }
 
             int pos_arrayList = 0;
 
-            for (int x = 1; x <= 10; x++)
+            for (int x = 1; x <= sala_seleccionada.Filas; x++)
             {
-                for (int y = 1; y <= 10; y++)
+                for (int y = 1; y <= sala_seleccionada.Columnas; y++)
                 {
 
                     foreach(Asiento a in sala_seleccionada.Asientos) 
@@ -119,20 +125,66 @@ namespace Practica_5
             }
         }
 
-        private void btnClick(object sender, EventArgs e) 
+        private void MenuItem_Click(object sender, RoutedEventArgs e, Button btn)
+        {
+            MenuItem menu_item = (MenuItem)sender;
+            String id_compra = btn.Content + sala_seleccionada.Nombre_evento;
+            switch (menu_item.Header) 
+            {
+                case "Comprar":
+                        sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true, id_compra));
+                        MessageBox.Show("Su id de compra es el siguiente: " + id_compra + ". Guárdelo para poder cancelar la compra en caso de ser necesario.", "Compra realizada con éxito", MessageBoxButton.OK);
+                        btn.Background = Brushes.Red;
+                    break;
+                case "Reservar":
+                        sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false, id_compra));
+                        MessageBox.Show("Su id de reserva es el siguiente: " + id_compra + ". Guárdelo para poder cancelar la Reserva en caso de ser necesario.", "Reserva realizada con éxito", MessageBoxButton.OK);
+                        btn.Background = Brushes.Yellow;
+                    break;
+                case "Cancelar compra o reserva":
+                    Confimar_cancelacion conf_canc = new Confimar_cancelacion(btn, sala_seleccionada);
+                    conf_canc.Show();
+                    break;
+
+            }
+        }
+
+        private void context_menu_enable(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            /*if (btn.Background == Brushes.Red || btn.Background == Brushes.Yellow)
+            if (btn.Background == Brushes.Red || btn.Background == Brushes.Yellow)
             {
-                Cancelar_compra_reserva cancelacion = new Cancelar_compra_reserva(btn, sala_seleccionada);
-                cancelacion.Show();
+                //Cancelar_compra_reserva cancelacion = new Cancelar_compra_reserva(btn, sala_seleccionada);
+                //cancelacion.Show();
+                context_menu.Items.Clear();
+                context_menu.Items.Add(new MenuItem());
+                MenuItem menu_item1 = (MenuItem)context_menu.Items.GetItemAt(0);
+                menu_item1.Header = "Cancelar compra o reserva";
+                menu_item1.Click += (sendr, RoutedEventArgs) => { MenuItem_Click(sendr, RoutedEventArgs, btn); }; ; ;
             }
-            else 
+            else
             {
-                Mensaje_reserva_compra confirmacion = new Mensaje_reserva_compra(btn, sala_seleccionada);
-                confirmacion.Show();
+                //Mensaje_reserva_compra confirmacion = new Mensaje_reserva_compra(btn, sala_seleccionada);
+                //confirmacion.Show();
+                context_menu.Items.Clear();
+                context_menu.Items.Add(new MenuItem());
+                MenuItem menu_item1 = (MenuItem)context_menu.Items.GetItemAt(0);
+                menu_item1.Header = "Comprar";
+                menu_item1.Click += (sendr, RoutedEventArgs) => { MenuItem_Click(sendr, RoutedEventArgs, btn); }; ;
+                context_menu.Items.Add(new MenuItem());
+                MenuItem menu_item2 = (MenuItem)context_menu.Items.GetItemAt(1);
+                menu_item2.Header = "Reservar";
+                menu_item2.Click += (sendr, RoutedEventArgs) => { MenuItem_Click(sendr, RoutedEventArgs, btn); }; ;
             }
-            */
+            btn.ContextMenu = context_menu;
+            context_menu.PlacementTarget = (Button)sender;
+            context_menu.IsOpen = true;
+
+        }
+
+        private void Ventana_Inicio_Closed(object sender, EventArgs e)
+        {
+            ventana_inicio.Show();
         }
     }
 }

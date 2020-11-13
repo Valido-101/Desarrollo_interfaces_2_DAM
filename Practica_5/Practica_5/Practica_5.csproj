@@ -55,23 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Cancelar_compra_reserva.xaml.cs">
-      <DependentUpon>Cancelar_compra_reserva.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Confimar_cancelacion.xaml.cs">
       <DependentUpon>Confimar_cancelacion.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Mensaje_reserva_compra.xaml.cs">
-      <DependentUpon>Mensaje_reserva_compra.xaml</DependentUpon>
+    <Compile Include="Crear_sala.xaml.cs">
+      <DependentUpon>Crear_sala.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sala.cs" />
-    <Page Include="Cancelar_compra_reserva.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
+    <Compile Include="Ventana_inicio.xaml.cs">
+      <DependentUpon>Ventana_inicio.xaml</DependentUpon>
+    </Compile>
     <Page Include="Confimar_cancelacion.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Crear_sala.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -88,9 +88,9 @@
       <SubType>Code</SubType>
       <CustomToolNamespace>Practica_5</CustomToolNamespace>
     </Compile>
-    <Page Include="Mensaje_reserva_compra.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Ventana_inicio.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

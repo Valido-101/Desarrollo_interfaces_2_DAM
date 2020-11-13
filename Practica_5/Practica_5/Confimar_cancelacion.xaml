@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practica_5"
         mc:Ignorable="d"
-        Title="Confirmación" Height="124.052" Width="626.031">
-    <Grid>
+        Title="Confirmación" Height="124.052" Width="626.031" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF8B0606">
         <Label Content="Introduzca el id de compra o reserva de su asiento:&#xD;&#xA;" HorizontalAlignment="Left" Margin="150,12,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtbox_id_compra" HorizontalAlignment="Left" Height="22" Margin="157,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
         <Button x:Name="btn_aceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="351,46,0,0" VerticalAlignment="Top" Width="76" Click="btn_aceptar_Click"/>

@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practica_5"
         mc:Ignorable="d"
-        Title="Gestor Teatro" Height="450" Width="800" Loaded="Ventana_Inicio_Loaded">
+        Title="Gestor Teatro" Height="450" Width="800" Loaded="Ventana_Inicio_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closed="Ventana_Inicio_Closed">
     <Grid Background="#FF8B0606">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
