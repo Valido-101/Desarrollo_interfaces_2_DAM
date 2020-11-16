@@ -15,7 +15,7 @@
         <TextBox x:Name="txtbox_hora" HorizontalAlignment="Left" Height="23" Margin="225,204,0,0" TextWrapping="Wrap" Text="Formato hh:mm" VerticalAlignment="Top" Width="120"  Foreground="Gray" GotFocus="txtbox_fecha_GotFocus" LostFocus="txtbox_fecha_LostFocus"/>
         <Label Content="Filas:" HorizontalAlignment="Left" Margin="440,104,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtbox_filas" HorizontalAlignment="Left" Height="23" Margin="486,104,0,0" TextWrapping="Wrap" Text="Número de filas" VerticalAlignment="Top" Width="120" Foreground="Gray" GotFocus="txtbox_fecha_GotFocus" LostFocus="txtbox_fecha_LostFocus"/>
-        <Label Content="Columnas:" HorizontalAlignment="Left" Margin="420,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Butacas:" HorizontalAlignment="Left" Margin="423,154,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtbox_columnas" HorizontalAlignment="Left" Height="23" Margin="486,154,0,0" TextWrapping="Wrap" Text="Butacas por fila" VerticalAlignment="Top" Width="120"  Foreground="Gray" GotFocus="txtbox_fecha_GotFocus" LostFocus="txtbox_fecha_LostFocus"/>
         <Button x:Name="btn_crear" Content="Crear" Width="100" Height="30" Margin="357,274,335,115" Click="btn_crear_Click" VerticalAlignment="Top" HorizontalAlignment="Left"/>
     </Grid>

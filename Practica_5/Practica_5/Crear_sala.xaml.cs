@@ -46,8 +46,17 @@ namespace Practica_5
 
         private void txtbox_fecha_GotFocus(object sender, RoutedEventArgs e)
         {
-            ((TextBox)sender).Text = "";
-            ((TextBox)sender).Foreground = Brushes.Black;
+            TextBox txt_box = (TextBox)sender;
+
+            if (txt_box.Text == "Formato dd/mm/aaa" || txt_box.Text == "Formato hh:mm" || txt_box.Text == "Número de filas" || txt_box.Text == "Butacas por fila") 
+            {
+                txt_box.Text = "";
+                txt_box.Foreground = Brushes.Black;
+            }
+            else 
+            {
+                txt_box.Foreground = Brushes.Black;
+            }
 
         }
 
