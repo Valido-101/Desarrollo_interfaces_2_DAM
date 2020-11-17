@@ -44,7 +44,7 @@ namespace Practica_5
             ventana_inicio.Show();
         }
 
-        private void txtbox_fecha_GotFocus(object sender, RoutedEventArgs e)
+        private void txtbox_GotFocus(object sender, RoutedEventArgs e)
         {
             TextBox txt_box = (TextBox)sender;
 
@@ -60,7 +60,7 @@ namespace Practica_5
 
         }
 
-        private void txtbox_fecha_LostFocus(object sender, RoutedEventArgs e)
+        private void txtbox_LostFocus(object sender, RoutedEventArgs e)
         {
             TextBox txtbox = ((TextBox)sender);
 
