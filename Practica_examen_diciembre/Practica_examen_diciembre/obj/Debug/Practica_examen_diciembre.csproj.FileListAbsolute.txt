@@ -1,0 +1,11 @@
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\bin\Debug\Practica_examen_diciembre.exe.config
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\bin\Debug\Practica_examen_diciembre.exe
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\bin\Debug\Practica_examen_diciembre.pdb
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.csprojAssemblyReference.cache
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.ventana_menu.resources
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.Properties.Resources.resources
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.Seleccionar_almacen.resources
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.csproj.GenerateResource.cache
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.csproj.CoreCompileInputs.cache
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.exe
+C:\Users\maxus\source\repos\Practica_examen_diciembre\Practica_examen_diciembre\obj\Debug\Practica_examen_diciembre.pdb
