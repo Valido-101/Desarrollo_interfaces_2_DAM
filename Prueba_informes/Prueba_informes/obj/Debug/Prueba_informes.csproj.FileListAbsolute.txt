@@ -68,3 +68,4 @@ C:\Users\maxus\source\repos\Prueba_informes\Prueba_informes\obj\Debug\Prueba_inf
 C:\Users\maxus\source\repos\Prueba_informes\Prueba_informes\obj\Debug\Prueba_informes.csproj.CopyComplete
 C:\Users\maxus\source\repos\Prueba_informes\Prueba_informes\obj\Debug\Prueba_informes.exe
 C:\Users\maxus\source\repos\Prueba_informes\Prueba_informes\obj\Debug\Prueba_informes.pdb
+C:\Users\maxus\source\repos\Prueba_informes\Prueba_informes\obj\Debug\Prueba_informes.csprojAssemblyReference.cache

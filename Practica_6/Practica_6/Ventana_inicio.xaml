@@ -1,0 +1,15 @@
+﻿<Window x:Class="Practica_6.Ventana_inicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_6"
+        mc:Ignorable="d"
+        Title="Gestor del Teatro" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF8B0606">
+        <DockPanel Width="200" Height="250">
+            <Button x:Name="btn_crear_sala" Width="200" Height="70" Content="Crear sala" FontSize="20" DockPanel.Dock="Top" Click="btn_crear_sala_Click"/>
+            <Button x:Name="btn_seleccionar_sala" Width="200" Height="70" Content="Seleccionar sala" FontSize="20" DockPanel.Dock="Bottom" Click="btn_seleccionar_sala_Click"/>
+        </DockPanel>
+    </Grid>
+</Window>

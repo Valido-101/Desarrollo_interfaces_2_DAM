@@ -32,6 +32,7 @@ namespace Prueba_informes
 
             Invoice.Add(new Class1("Párametro str Clase 1",1));
             Invoice.Add(new Class1("Párametro str Clase 1", 2));
+            Invoice.Add(new Class1("ñeh",3));
 
             reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DatosClass1",Invoice));
 
