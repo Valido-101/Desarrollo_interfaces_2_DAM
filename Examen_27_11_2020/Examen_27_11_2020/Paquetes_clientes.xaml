@@ -1,0 +1,19 @@
+﻿<Window x:Class="Examen_27_11_2020.Paquetes_clientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Examen_27_11_2020"
+        mc:Ignorable="d"
+        Title="Administrador de Paquetes" Height="450" Width="800">
+    <Canvas Background="DarkGreen">
+        <Grid Width="795">
+            <Label x:Name="label_cliente" FontWeight="Bold" HorizontalAlignment="Center"  Height="30"/>
+        </Grid>
+        <ListBox x:Name="lstbox_comprados" Width="150" Height="300" FontWeight="Bold" Background="ForestGreen" BorderBrush="ForestGreen" Canvas.Left="125" Canvas.Top="95" GotFocus="lstbox_GotFocus"/>
+        <ListBox x:Name="lstbox_reservados" Width="150" Height="300" FontWeight="Bold" Background="ForestGreen" BorderBrush="ForestGreen" Canvas.Left="310" Canvas.Top="95" GotFocus="lstbox_GotFocus"/>
+        <Button x:Name="btn_cancelar" Width="181" Height="50" Content="Cancelar Paquete Seleccionado" Click="btn_cancelar_Click" Canvas.Left="514" Canvas.Top="226"/>
+        <Label Width="127" Height="28" Content="Paquetes Comprados" Canvas.Left="129" Canvas.Top="63" FontWeight="Bold"/>
+        <Label Width="127" Height="30" Content="Paquetes Reservados" Canvas.Left="317" Canvas.Top="63" FontWeight="Bold"/>
+    </Canvas>
+</Window>
