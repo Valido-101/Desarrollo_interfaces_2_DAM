@@ -135,17 +135,14 @@ namespace Practica_6
             {
                 case "Comprar":
                         sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true, id_compra));
-                        carrito.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true, id_compra));
-                    MessageBox.Show("Su id de compra es el siguiente: " + id_compra + ". Guárdelo para poder cancelar la compra en caso de ser necesario.", "Compra realizada con éxito", MessageBoxButton.OK);
                         btn.Background = Brushes.Red;
                     break;
                 case "Reservar":
-                        sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false, id_compra));
-                        MessageBox.Show("Su id de reserva es el siguiente: " + id_compra + ". Guárdelo para poder cancelar la Reserva en caso de ser necesario.", "Reserva realizada con éxito", MessageBoxButton.OK);
+                        sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false, id_compra));                        
                         btn.Background = Brushes.Yellow;
                     break;
                 case "Cancelar compra o reserva":
-                    Confimar_cancelacion conf_canc = new Confimar_cancelacion(btn, sala_seleccionada, carrito);
+                    Confimar_cancelacion conf_canc = new Confimar_cancelacion(btn, sala_seleccionada);
                     conf_canc.Show();
                     break;
 
@@ -192,7 +189,15 @@ namespace Practica_6
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Formulario_Informe informe = new Formulario_Informe(sala_seleccionada);
+            informe.Show();
+            informe.FormClosing += Informe_FormClosing;
+            this.Hide();
+        }
 
+        private void Informe_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
+        {
+            this.Show();
         }
     }
 }

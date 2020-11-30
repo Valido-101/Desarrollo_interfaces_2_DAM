@@ -27,7 +27,7 @@
             <Label x:Name="label_color_libre" Content="   " Canvas.Left="420" Canvas.Top="160" Background="White" Height="20" Visibility="Hidden"/>
             <Label x:Name="label_fecha" FontWeight="Bold" Content="" Canvas.Left="59" Canvas.Top="12"/>
             <Label x:Name="label_hora" FontWeight="Bold" Content="" Canvas.Left="212" Canvas.Top="12"/>
-            <Button x:Name="btn_confirmar_compra" Content="Confirmar compra" Canvas.Left="14" Canvas.Top="16" Width="112" Click="Button_Click" Visibility="Hidden"/>
+            <Button x:Name="btn_confirmar_compra" Content="Confirmar compra" Canvas.Left="450" Canvas.Top="16" Width="112" Click="Button_Click" Visibility="Hidden"/>
         </Canvas>
         <StackPanel Grid.Column="0">
             <Label FontSize="10" FontWeight="Bold">Por favor, haga doble click en una sala:</Label>

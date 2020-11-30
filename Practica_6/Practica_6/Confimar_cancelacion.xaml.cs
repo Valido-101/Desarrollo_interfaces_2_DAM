@@ -22,14 +22,12 @@ namespace Practica_6
 
         Button btn;
         Sala sala_seleccionada;
-        ArrayList carrito;
 
-        public Confimar_cancelacion(Button btn, Sala sala_seleccionada, ArrayList carrito)
+        public Confimar_cancelacion(Button btn, Sala sala_seleccionada)
         {
             InitializeComponent();
             this.btn = btn;
             this.sala_seleccionada = sala_seleccionada;
-            this.carrito = carrito;
         }
 
         private void btn_aceptar_Click(object sender, RoutedEventArgs e)
@@ -44,7 +42,6 @@ namespace Practica_6
                         {
                             btn.Background = Brushes.White;
                             sala_seleccionada.Asientos.Remove(a);
-                            carrito.Remove(a);
                             MessageBox.Show("Cancelación realizada con éxito", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
                             break;
                         }
