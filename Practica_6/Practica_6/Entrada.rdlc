@@ -45,45 +45,6 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="Textbox8">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Obra: </Value>
-                    <Style>
-                      <FontSize>20pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>=Parameters!param_nombre_evento.Value</Value>
-                    <Style>
-                      <FontSize>20pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox8</rd:DefaultName>
-            <Top>0.91087cm</Top>
-            <Left>1.18745cm</Left>
-            <Height>1.05833cm</Height>
-            <Width>11.56229cm</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Tablix Name="Tablix4">
             <TablixBody>
               <TablixColumns>
@@ -308,50 +269,77 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DatosAsiento</DataSetName>
-            <Top>2.76296cm</Top>
-            <Left>1.18745cm</Left>
+            <Top>1.29879cm</Top>
+            <Left>5.72843cm</Left>
             <Height>1.43812cm</Height>
-            <Width>12.76583cm</Width>
-            <ZIndex>1</ZIndex>
+            <Width>12.76584cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
+          <Image Name="imagenEvento">
+            <Source>External</Source>
+            <Value>=Parameters!rutaImagen2.Value</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.61087cm</Top>
+            <Left>0.44662cm</Left>
+            <Height>4.27812cm</Height>
+            <Width>4.80729cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
         <Height>2.39583in</Height>
         <Style />
       </Body>
-      <Width>6.99875in</Width>
+      <Width>8.01958in</Width>
       <Page>
         <PageHeader>
           <Height>4.01849cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Textbox Name="Textbox6">
+            <Image Name="teatroRemediosLogo">
+              <Source>Embedded</Source>
+              <Value>logoteatrolosremedios</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.77321cm</Top>
+              <Height>2.48708cm</Height>
+              <Width>5.58271cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="fecha">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Recibo de compra de entradas</Value>
+                      <Value>=Parameters!fecha.Value</Value>
                       <Style>
-                        <FontSize>20pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
+                        <FontSize>14pt</FontSize>
                       </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox6</rd:DefaultName>
-              <Top>1.3462cm</Top>
-              <Left>6.39974cm</Left>
-              <Height>0.9175cm</Height>
-              <Width>10.83438cm</Width>
+              <rd:DefaultName>fecha</rd:DefaultName>
+              <Top>2.37808cm</Top>
+              <Left>6.66433cm</Left>
+              <Height>0.88221cm</Height>
+              <Width>4.09744cm</Width>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -362,20 +350,71 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Image Name="teatroRemediosLogo">
-              <Source>Embedded</Source>
-              <Value>logoteatrolosremedios</Value>
-              <Sizing>FitProportional</Sizing>
-              <Top>0.77321cm</Top>
-              <Height>2.48708cm</Height>
-              <Width>5.58271cm</Width>
-              <ZIndex>1</ZIndex>
+            <Textbox Name="hora">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!hora.Value</Value>
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>hora</rd:DefaultName>
+              <Top>2.37808cm</Top>
+              <Left>13.19953cm</Left>
+              <Height>0.88221cm</Height>
+              <Width>4.09119cm</Width>
+              <ZIndex>2</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
               </Style>
-            </Image>
+            </Textbox>
+            <Textbox Name="param_nombre_evento">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!param_nombre_evento.Value</Value>
+                      <Style>
+                        <FontSize>18pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>param_nombre_evento</rd:DefaultName>
+              <Top>0.77321cm</Top>
+              <Left>6.66433cm</Left>
+              <Height>1.02333cm</Height>
+              <Width>10.62639cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style>
             <Border>
@@ -457,9 +496,25 @@
               <Source>Embedded</Source>
               <Value>logofesac</Value>
               <Sizing>FitProportional</Sizing>
+              <Top>0cm</Top>
               <Height>2.56646cm</Height>
               <Width>2.50224cm</Width>
               <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Image Name="QR">
+              <Source>External</Source>
+              <Value>=Parameters!rutaImagen.Value</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0cm</Top>
+              <Left>3.5253cm</Left>
+              <Height>2.56646cm</Height>
+              <Width>2.90408cm</Width>
+              <ZIndex>3</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -493,6 +548,22 @@
       <DataType>Integer</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="rutaImagen">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="rutaImagen2">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fecha">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="hora">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -508,6 +579,26 @@
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>total_entrada</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>rutaImagen</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>rutaImagen2</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>fecha</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>hora</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

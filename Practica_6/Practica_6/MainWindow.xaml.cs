@@ -135,14 +135,16 @@ namespace Practica_6
             {
                 case "Comprar":
                         sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true, id_compra));
+                        carrito.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true, id_compra));
                         btn.Background = Brushes.Red;
                     break;
                 case "Reservar":
-                        sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false, id_compra));                        
+                        sala_seleccionada.Asientos.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), false, id_compra));
+                        carrito.Add(new Asiento(Grid.GetRow(btn), Grid.GetColumn(btn), true, id_compra));
                         btn.Background = Brushes.Yellow;
                     break;
                 case "Cancelar compra o reserva":
-                    Confimar_cancelacion conf_canc = new Confimar_cancelacion(btn, sala_seleccionada);
+                    Confimar_cancelacion conf_canc = new Confimar_cancelacion(btn, sala_seleccionada, carrito);
                     conf_canc.Show();
                     break;
 
@@ -189,15 +191,16 @@ namespace Practica_6
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Formulario_Informe informe = new Formulario_Informe(sala_seleccionada);
+            Formulario_Informe informe = new Formulario_Informe(sala_seleccionada, carrito);
             informe.Show();
-            informe.FormClosing += Informe_FormClosing;
+            informe.FormClosed += Informe_FormClosed;
             this.Hide();
         }
 
-        private void Informe_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
+        private void Informe_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
         {
             this.Show();
+            carrito.Clear();
         }
     }
 }

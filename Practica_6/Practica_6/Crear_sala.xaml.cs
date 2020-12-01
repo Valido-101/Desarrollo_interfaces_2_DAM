@@ -32,7 +32,7 @@ namespace Practica_6
 
         private void btn_crear_Click(object sender, RoutedEventArgs e)
         {
-            salas.Add(new Sala(txtbox_nombre_evento.Text,txtbox_fecha.Text,txtbox_hora.Text,Convert.ToInt32(txtbox_filas.Text),Convert.ToInt32(txtbox_columnas.Text)));
+            //salas.Add(new Sala(txtbox_nombre_evento.Text,txtbox_fecha.Text,txtbox_hora.Text,Convert.ToInt32(txtbox_filas.Text),Convert.ToInt32(txtbox_columnas.Text)));
             MessageBox.Show("Sala creada con éxito.","Información",MessageBoxButton.OK,MessageBoxImage.Information);
 
             this.Close();

@@ -25,8 +25,8 @@ namespace Practica_6
         {
             InitializeComponent();
 
-            salas.Add(new Sala("Cyrano de Bergerac", "26/06/2021", "20:00", 10, 10));
-            salas.Add(new Sala("Romeo y Julieta", "27/06/2021", "22:00", 10, 10));
+            salas.Add(new Sala("Cyrano de Bergerac", "26/06/2021", "20:00", 10, 10, System.Windows.Forms.Application.StartupPath+@"\carpeta_imagenes\cyrano.jpg"));
+            salas.Add(new Sala("Romeo y Julieta", "27/06/2021", "22:00", 10, 10, System.Windows.Forms.Application.StartupPath+@"\carpeta_imagenes\romeo_julieta.jpg"));
         }
 
         private void btn_crear_sala_Click(object sender, RoutedEventArgs e)
