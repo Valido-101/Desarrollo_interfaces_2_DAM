@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -32,8 +34,8 @@ namespace Practica_6
 
         private void btn_crear_Click(object sender, RoutedEventArgs e)
         {
-            //salas.Add(new Sala(txtbox_nombre_evento.Text,txtbox_fecha.Text,txtbox_hora.Text,Convert.ToInt32(txtbox_filas.Text),Convert.ToInt32(txtbox_columnas.Text)));
-            MessageBox.Show("Sala creada con éxito.","Información",MessageBoxButton.OK,MessageBoxImage.Information);
+            salas.Add(new Sala(txtbox_nombre_evento.Text,txtbox_fecha.Text,txtbox_hora.Text,Convert.ToInt32(txtbox_filas.Text),Convert.ToInt32(txtbox_columnas.Text),txtbox_cartelEvento.Text));
+            System.Windows.MessageBox.Show("Sala creada con éxito.","Información",MessageBoxButton.OK,MessageBoxImage.Information);
 
             this.Close();
 
@@ -46,7 +48,7 @@ namespace Practica_6
 
         private void txtbox_GotFocus(object sender, RoutedEventArgs e)
         {
-            TextBox txt_box = (TextBox)sender;
+            System.Windows.Controls.TextBox txt_box = (System.Windows.Controls.TextBox)sender;
 
             if (txt_box.Text == "Formato dd/mm/aaa" || txt_box.Text == "Formato hh:mm" || txt_box.Text == "Número de filas" || txt_box.Text == "Butacas por fila") 
             {
@@ -62,7 +64,7 @@ namespace Practica_6
 
         private void txtbox_LostFocus(object sender, RoutedEventArgs e)
         {
-            TextBox txtbox = ((TextBox)sender);
+            System.Windows.Controls.TextBox txtbox = ((System.Windows.Controls.TextBox)sender);
 
             if (txtbox.Text == "") 
             {
@@ -87,6 +89,16 @@ namespace Practica_6
                         break;
                 }
             }
+        }
+
+        private void btn_elegirArchivo_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) 
+            {
+                txtbox_cartelEvento.Text = openFileDialog.FileName;
+            }
+                
         }
     }
 }

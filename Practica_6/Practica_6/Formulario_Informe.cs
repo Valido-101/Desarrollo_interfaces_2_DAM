@@ -62,7 +62,7 @@ namespace Practica_6
 
             parameters[2] = new ReportParameter("rutaImagen", @"file:\" + ruta, true);
 
-            parameters[3] = new ReportParameter("rutaImagen2", @"file:///"+sala_seleccionada.Ruta_imagen);
+            parameters[3] = new ReportParameter("rutaImagen2", @"file:\"+sala_seleccionada.Ruta_imagen,true);
 
             parameters[4] = new ReportParameter("fecha", sala_seleccionada.Fecha);
 
