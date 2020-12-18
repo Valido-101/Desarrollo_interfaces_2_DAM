@@ -71,6 +71,8 @@
     <Compile Include="Comprar_reservar.xaml.cs">
       <DependentUpon>Comprar_reservar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ICliente.cs" />
+    <Compile Include="IPaquete.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

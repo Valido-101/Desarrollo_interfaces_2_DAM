@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Examen_27_11_2020
 {
-//    Atributos: nombre, descripción, precio, fechaInicio, duración.
-//    Métodos: getter, setter, constructor(parametrizado), ToString que devuelva el nombre y precio(sobrecargar)
-    public class Paquete
+    //    Atributos: nombre, descripción, precio, fechaInicio, duración.
+    //    Métodos: getter, setter, constructor(parametrizado), ToString que devuelva el nombre y precio(sobrecargar)
+    public class Paquete : IPaquete
     {
         private string nombre;
         private string descripcion;
@@ -32,7 +32,7 @@ namespace Examen_27_11_2020
         public int Duracion { get => duracion; set => duracion = value; }
 
         override
-        public string ToString() 
+        public string ToString()
         {
             return "Nombre: " + nombre + ", Precio: " + precio;
         }

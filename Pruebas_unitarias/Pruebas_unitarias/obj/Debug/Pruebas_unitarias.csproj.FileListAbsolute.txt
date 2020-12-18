@@ -1,0 +1,9 @@
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\bin\Debug\Pruebas_unitarias.exe.config
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\bin\Debug\Pruebas_unitarias.exe
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\bin\Debug\Pruebas_unitarias.pdb
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\obj\Debug\Pruebas_unitarias.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\obj\Debug\Pruebas_unitarias.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\obj\Debug\Pruebas_unitarias.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\obj\Debug\Pruebas_unitarias.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\obj\Debug\Pruebas_unitarias.exe
+C:\Users\Usuario\source\repos\Pruebas_unitarias\Pruebas_unitarias\obj\Debug\Pruebas_unitarias.pdb

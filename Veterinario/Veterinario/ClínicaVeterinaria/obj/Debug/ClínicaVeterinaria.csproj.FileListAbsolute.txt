@@ -1,0 +1,60 @@
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe.config
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.pdb
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csprojAssemblyReference.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\MainWindow.g.cs
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\App.g.cs
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.lref
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\MainWindow.baml
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.g.resources
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.Properties.Resources.resources
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.GenerateResource.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.CoreCompileInputs.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.exe
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Proyectos\ClínicaVeterinaria\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.pdb
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe.config
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.pdb
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csprojAssemblyReference.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\MainWindow.g.cs
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\App.g.cs
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.lref
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\MainWindow.baml
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.g.resources
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.Properties.Resources.resources
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.GenerateResource.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.CoreCompileInputs.cache
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.exe
+F:\Material FESAC\02 - DI Desarrollo de Interfaz 2\Recursos\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.pdb
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe.config
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.pdb
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csprojAssemblyReference.cache
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\MainWindow.g.cs
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\App.g.cs
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.cache
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.lref
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\MainWindow.baml
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.g.resources
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.Properties.Resources.resources
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.GenerateResource.cache
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.CoreCompileInputs.cache
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.exe
+C:\Users\FESAC\Desktop\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.pdb
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe.config
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.exe
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\bin\Debug\ClínicaVeterinaria.pdb
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\App.g.cs
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.cache
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria_MarkupCompile.lref
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\MainWindow.baml
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.g.resources
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.exe
+C:\Users\Usuario\source\repos\Veterinario\Veterinario\ClínicaVeterinaria\obj\Debug\ClínicaVeterinaria.pdb

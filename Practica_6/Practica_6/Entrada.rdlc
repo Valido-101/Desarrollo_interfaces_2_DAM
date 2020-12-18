@@ -496,6 +496,7 @@
               <Source>Embedded</Source>
               <Value>logofesac</Value>
               <Sizing>FitProportional</Sizing>
+              <Top>0cm</Top>
               <Height>2.56646cm</Height>
               <Width>2.50224cm</Width>
               <ZIndex>2</ZIndex>
@@ -509,6 +510,7 @@
               <Source>External</Source>
               <Value>=Parameters!rutaImagen.Value</Value>
               <Sizing>FitProportional</Sizing>
+              <Top>0cm</Top>
               <Left>3.5253cm</Left>
               <Height>2.56646cm</Height>
               <Width>2.90408cm</Width>
