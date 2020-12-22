@@ -50,7 +50,7 @@ namespace ClínicaVeterinaria
 
         //El método Premiar recibe un objeto (mascota) y una cadena (premio)
         //Invoca al método SeRelaja de la mascota usando el premio y devuelve lo que devuelva dicho método
-        private bool Premiar (IMascota m, string premio)
+        public bool Premiar (IMascota m, string premio)
         {
             return m.SeRelaja(premio);
         }

@@ -15,7 +15,7 @@ namespace ClínicaVeterinaria
 
         public void AltaCliente(ICliente c)
         {
-            clientes.Add ((ICliente)new Cliente ("","",""));
+            clientes.Add((ICliente)new Cliente("","",""));
         }
         public void AltaVeterinario(IVeterinario v)
         {
