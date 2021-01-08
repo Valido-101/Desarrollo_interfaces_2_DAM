@@ -39,7 +39,7 @@
             // 
             // btn_insertar_persona
             // 
-            this.btn_insertar_persona.Location = new System.Drawing.Point(72, 108);
+            this.btn_insertar_persona.Location = new System.Drawing.Point(72, 76);
             this.btn_insertar_persona.Name = "btn_insertar_persona";
             this.btn_insertar_persona.Size = new System.Drawing.Size(188, 23);
             this.btn_insertar_persona.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // btn_mostrar_personas
             // 
-            this.btn_mostrar_personas.Location = new System.Drawing.Point(318, 108);
+            this.btn_mostrar_personas.Location = new System.Drawing.Point(72, 134);
             this.btn_mostrar_personas.Name = "btn_mostrar_personas";
             this.btn_mostrar_personas.Size = new System.Drawing.Size(188, 23);
             this.btn_mostrar_personas.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // btn_consultar_por_dni
             // 
-            this.btn_consultar_por_dni.Location = new System.Drawing.Point(555, 108);
+            this.btn_consultar_por_dni.Location = new System.Drawing.Point(72, 197);
             this.btn_consultar_por_dni.Name = "btn_consultar_por_dni";
             this.btn_consultar_por_dni.Size = new System.Drawing.Size(188, 23);
             this.btn_consultar_por_dni.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // btn_mostrar_3_nombres_mas_largos
             // 
-            this.btn_mostrar_3_nombres_mas_largos.Location = new System.Drawing.Point(131, 253);
+            this.btn_mostrar_3_nombres_mas_largos.Location = new System.Drawing.Point(541, 76);
             this.btn_mostrar_3_nombres_mas_largos.Name = "btn_mostrar_3_nombres_mas_largos";
             this.btn_mostrar_3_nombres_mas_largos.Size = new System.Drawing.Size(188, 23);
             this.btn_mostrar_3_nombres_mas_largos.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // btn_mostrar_personas_con_algun_dato_vacio
             // 
-            this.btn_mostrar_personas_con_algun_dato_vacio.Location = new System.Drawing.Point(505, 253);
+            this.btn_mostrar_personas_con_algun_dato_vacio.Location = new System.Drawing.Point(541, 134);
             this.btn_mostrar_personas_con_algun_dato_vacio.Name = "btn_mostrar_personas_con_algun_dato_vacio";
             this.btn_mostrar_personas_con_algun_dato_vacio.Size = new System.Drawing.Size(188, 23);
             this.btn_mostrar_personas_con_algun_dato_vacio.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             // btn_salir_aplicacion
             // 
-            this.btn_salir_aplicacion.Location = new System.Drawing.Point(318, 380);
+            this.btn_salir_aplicacion.Location = new System.Drawing.Point(541, 197);
             this.btn_salir_aplicacion.Name = "btn_salir_aplicacion";
             this.btn_salir_aplicacion.Size = new System.Drawing.Size(188, 23);
             this.btn_salir_aplicacion.TabIndex = 5;
@@ -103,7 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 592);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_salir_aplicacion);
             this.Controls.Add(this.btn_mostrar_personas_con_algun_dato_vacio);
             this.Controls.Add(this.btn_mostrar_3_nombres_mas_largos);
@@ -113,7 +113,6 @@
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Programa";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

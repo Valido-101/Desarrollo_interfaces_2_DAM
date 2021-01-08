@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Practica_1_interfaces
 {
     //Clase persona que servirá para crear los objetos
-    public class Persona
+    class Persona
     {
         //Atributos
         private string dni;

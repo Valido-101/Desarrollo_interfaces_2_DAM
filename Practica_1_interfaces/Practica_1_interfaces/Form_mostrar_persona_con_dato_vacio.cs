@@ -38,7 +38,7 @@ namespace Practica_1_interfaces
             //Si no se ha insertado ninguna persona se informa al usuario
             if (personas.Count == 0) 
             {
-                MessageBox.Show("No se ha insertado ninguna persona.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No se ha insertado ninguna persona.");
             }
             else 
             {
@@ -57,7 +57,7 @@ namespace Practica_1_interfaces
                 //vacío se informa al usuario
                 if (personas_con_dato_vacio.Count == 0)
                 {
-                    MessageBox.Show("No hay ninguna persona con algún dato vacío.","Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No hay ninguna persona con algún dato vacío.","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

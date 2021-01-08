@@ -9,8 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using Practica_1_interfaces.personas_practica_1DataSetTableAdapters;
-using MySqlX.XDevAPI;
 
 namespace Practica_1_interfaces
 {
@@ -96,21 +94,6 @@ namespace Practica_1_interfaces
             Form_mostrar_persona_con_dato_vacio form_dato_vacio = new Form_mostrar_persona_con_dato_vacio(personas);
             //Con esto mostramos el formulario después de crearlo
             form_dato_vacio.Show();
-        }
-
-        private void personaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.personaBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.personas_practica_1DataSet);
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'personas_practica_1DataSet.persona' Puede moverla o quitarla según sea necesario.
-            this.personaTableAdapter.Fill(this.personas_practica_1DataSet.persona);
-
         }
     }
 }
