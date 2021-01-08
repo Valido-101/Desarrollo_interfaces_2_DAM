@@ -20,13 +20,15 @@ namespace Practica_1_interfaces
         public Form1()
         {
             InitializeComponent();
+            for (int i = 1; i <= 5; i++)
+            {
+                personas.Add(new Persona("dni" + i, "Nombre" + i, "Apellidos" + i, "fecha de nacimiento" + i, i, i));
+            }
 
-        }        
+        }
 
         //Arraylist de personas donde guardaremos cada una de las personas creadas
         ArrayList personas = new ArrayList();
-
-        
 
         //Botón que cierra la aplicación
         private void btn_salir_aplicacion_Click(object sender, EventArgs e)

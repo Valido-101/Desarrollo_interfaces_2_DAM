@@ -49,7 +49,7 @@ namespace Practica_1_interfaces
                     //o 0 (los de tipo numérico), se guarda el nombre en el nuevo arraylist
                     if (p.getNombre() == "" || p.getApellidos() == "" || p.getDni() == "" || p.getFechaNacimiento() == "" || p.getPeso() == 0 || p.getAltura() == 0)
                     {
-                        personas_con_dato_vacio.Add(p.getNombre());
+                        personas_con_dato_vacio.Add("DNI: "+p.getDni());
                     }
                 }
 

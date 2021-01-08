@@ -75,6 +75,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="miagendaDataSet.cs">
+      <DependentUpon>miagendaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="miagendaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

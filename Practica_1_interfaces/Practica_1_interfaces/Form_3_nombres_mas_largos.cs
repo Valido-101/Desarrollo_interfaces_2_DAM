@@ -39,6 +39,8 @@ namespace Practica_1_interfaces
         ArrayList num_caracteres_nombres_mas_largos = new ArrayList();
         //Variable que se encarga de ver si hay al menos 3 nombres rellenos
         int datos_rellenos = 0;
+        //Variable que impide que entre en un bucle infinito
+        int iteraciones = 1;
         
         //Evento que se realizará cuando se cargue el formulario
         private void Form_3_nombres_mas_largos_Load(object sender, EventArgs e)
@@ -98,6 +100,12 @@ namespace Practica_1_interfaces
                         //con la última longitud de la iteración anterior, que podría dar 
                         //problemas en el bucle
                         nombre_mas_largo = 0;
+                        //Aumentamos la variable iteraciones para que no se repita más de tres veces el bucle
+                        iteraciones++;
+                        if (iteraciones > 3) 
+                        {
+                            break;
+                        }
 
                     }
                 }

@@ -125,17 +125,19 @@ namespace PruebasVeterinario
             //Creamos un string con la vacuna
             string vacuna = "Leishmaniosis";
 
+            mascota.GetVacunas().Add(vacuna);
+
             //Creamos el mock
-            var mockMascota = new Mock<IMascota>();
+            //var mockMascota = new Mock<IMascota>();
 
             //Nos aseguramos de que el comportamiento del mock sea que la mascota se relaje y que al vacunarla lance una excepción
             //para poder controlar este caso
-            mockMascota.Setup(x => x.SeRelaja(It.IsAny<string>())).Returns(true);
+            //mockMascota.Setup(x => x.SeRelaja(It.IsAny<string>())).Returns(true);
 
-            mockMascota.Setup(x => x.Vacunar(It.IsAny<string>())).Throws(new System.Exception());
+            //mockMascota.Setup(x => x.Vacunar(It.IsAny<string>())).Throws(new System.Exception());
 
             //Comprobamos que al ejecutar el método PonerVacuna devuelve false
-            Assert.IsFalse(veterinario.PonerVacuna((IMascota)mockMascota.Object, vacuna));
+            Assert.IsFalse(veterinario.PonerVacuna(mascota, vacuna));
         }
 
         [TestMethod]
@@ -146,13 +148,13 @@ namespace PruebasVeterinario
             string vacuna = "Leishmaniosis";
 
             //Creamos el mock
-            var mockMascota = new Mock<IMascota>();
+            //var mockMascota = new Mock<IMascota>();
 
             //Nos aseguramos de que el método SeRelaja() del mock devuelva true
-            mockMascota.Setup(x => x.SeRelaja(It.IsAny<string>())).Returns(true);
+            //mockMascota.Setup(x => x.SeRelaja(It.IsAny<string>())).Returns(true);
 
             //Comprobamos que al ejecutar el método PonerVacuna devuelve true
-            Assert.IsTrue(veterinario.PonerVacuna((IMascota)mockMascota.Object, vacuna));
+            Assert.IsTrue(veterinario.PonerVacuna(mascota, vacuna));
 
 
         }

@@ -2,14 +2,15 @@
 <xs:schema id="miagendaDataSet" targetNamespace="http://tempuri.org/miagendaDataSet.xsd" xmlns:mstns="http://tempuri.org/miagendaDataSet.xsd" xmlns="http://tempuri.org/miagendaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="miagenda2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="miagenda2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Practica_2_arreglo.Properties.Settings.GlobalReference.Default.miagenda2ConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="miagendaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="miagendaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Practica_2_arreglo.Properties.Settings.GlobalReference.Default.miagendaConnectionString" Provider="MySql.Data.MySqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="agendaTableAdapter" GeneratorDataComponentClassName="agendaTableAdapter" Name="agenda" UserDataComponentName="agendaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="miagenda2.agenda" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="miagenda.agenda" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `agenda` WHERE ((`id` = @p1) AND (`nombre` = @p2) AND (`annio` = @p3))</CommandText>
@@ -57,7 +58,7 @@
               <Mapping SourceColumn="annio" DataSetColumn="annio" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="crearAgenda" Modifier="Public" Name="crearAgenda" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="crearAgenda">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="crearAgenda" Modifier="Public" Name="crearAgenda" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="crearAgenda">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `agenda` (`id`, `nombre`, `annio`) VALUES (@p1, @p2, @p3)</CommandText>
@@ -69,7 +70,7 @@
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getIdAutomatico" Modifier="Public" Name="getIdAutomatico" QueryType="Scalar" ScalarCallRetval="System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getIdAutomatico">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getIdAutomatico" Modifier="Public" Name="getIdAutomatico" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getIdAutomatico">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT MAX(id)+1 FROM agenda</CommandText>
@@ -81,7 +82,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tareaTableAdapter" GeneratorDataComponentClassName="tareaTableAdapter" Name="tarea" UserDataComponentName="tareaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="miagenda2.tarea" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="miagenda.tarea" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM `tarea` WHERE ((`id_agenda` = @p1) AND (`dia` = @p2) AND (`mes` = @p3) AND (`hora` = @p4) AND (`descripcion` = @p5) AND (`lugar` = @p6))</CommandText>
@@ -144,7 +145,7 @@
               <Mapping SourceColumn="lugar" DataSetColumn="lugar" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="crearTarea" Modifier="Public" Name="crearTarea" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="crearTarea">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="crearTarea" Modifier="Public" Name="crearTarea" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="crearTarea">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `tarea` (`id_agenda`, `dia`, `mes`, `hora`, `descripcion`, `lugar`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6)</CommandText>
@@ -159,7 +160,7 @@
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="eliminarTarea" Modifier="Public" Name="eliminarTarea" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="eliminarTarea">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="eliminarTarea" Modifier="Public" Name="eliminarTarea" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="eliminarTarea">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM `tarea` WHERE ((`id_agenda` = @p1) AND (`dia` = @p2) AND (`mes` = @p3) AND (`hora` = @p4))</CommandText>
@@ -172,7 +173,7 @@
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="modificarTarea" Modifier="Public" Name="modificarTarea" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="modificarTarea">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="modificarTarea" Modifier="Public" Name="modificarTarea" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="modificarTarea">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE `tarea` SET `hora`=@p4, `descripcion` = @p5, `lugar` = @p6 WHERE ((`id_agenda` = @p7) AND (`dia` = @p8) AND (`mes` = @p9) AND (`hora` = @p10))</CommandText>
@@ -188,7 +189,7 @@
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="numTareasDiaConcreto" Modifier="Public" Name="numTareasDiaConcreto" QueryType="Scalar" ScalarCallRetval="System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="numTareasDiaConcreto">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="numTareasDiaConcreto" Modifier="Public" Name="numTareasDiaConcreto" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="numTareasDiaConcreto">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) FROM `tarea` WHERE `id_agenda`=@p1 AND `dia`=@p2 AND `mes`=@p3</CommandText>
@@ -200,7 +201,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="miagenda2.tarea" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="setTareasAgendaConcreta" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="getTareasAgendaConcreta" GeneratorSourceName="setTareasAgendaConcreta" GetMethodModifier="Public" GetMethodName="getTareasAgendaConcreta" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getTareasAgendaConcreta" UserSourceName="setTareasAgendaConcreta">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="miagenda.tarea" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="setTareasAgendaConcreta" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="getTareasAgendaConcreta" GeneratorSourceName="setTareasAgendaConcreta" GetMethodModifier="Public" GetMethodName="getTareasAgendaConcreta" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getTareasAgendaConcreta" UserSourceName="setTareasAgendaConcreta">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT `id_agenda`, `dia`, `mes`, `hora`, `descripcion`, `lugar` FROM `tarea` WHERE `id_agenda`=@p1</CommandText>
@@ -210,7 +211,7 @@
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="miagenda2ConnectionString (Settings)" DbObjectName="miagenda2.tarea" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="setTareasAgendaDiaConcreto" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="getTareasAgendaDiaConcreto" GeneratorSourceName="setTareasAgendaDiaConcreto" GetMethodModifier="Public" GetMethodName="getTareasAgendaDiaConcreto" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getTareasAgendaDiaConcreto" UserSourceName="setTareasAgendaDiaConcreto">
+              <DbSource ConnectionRef="miagendaConnectionString (Settings)" DbObjectName="miagenda.tarea" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="setTareasAgendaDiaConcreto" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="getTareasAgendaDiaConcreto" GeneratorSourceName="setTareasAgendaDiaConcreto" GetMethodModifier="Public" GetMethodName="getTareasAgendaDiaConcreto" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getTareasAgendaDiaConcreto" UserSourceName="setTareasAgendaDiaConcreto">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT `id_agenda`, `dia`, `mes`, `hora`, `descripcion`, `lugar` FROM `tarea` WHERE `id_agenda`=@p1 AND `dia`=@p2 AND `mes`=@p3</CommandText>
@@ -232,7 +233,7 @@
   <xs:element name="miagendaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="miagendaDataSet" msprop:Generator_UserDSName="miagendaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="agenda" msprop:Generator_TableClassName="agendaDataTable" msprop:Generator_TableVarName="tableagenda" msprop:Generator_TablePropName="agenda" msprop:Generator_RowDeletingName="agendaRowDeleting" msprop:Generator_RowChangingName="agendaRowChanging" msprop:Generator_RowEvHandlerName="agendaRowChangeEventHandler" msprop:Generator_RowDeletedName="agendaRowDeleted" msprop:Generator_UserTableName="agenda" msprop:Generator_RowChangedName="agendaRowChanged" msprop:Generator_RowEvArgName="agendaRowChangeEvent" msprop:Generator_RowClassName="agendaRow">
+        <xs:element name="agenda" msprop:Generator_TableClassName="agendaDataTable" msprop:Generator_TableVarName="tableagenda" msprop:Generator_RowChangedName="agendaRowChanged" msprop:Generator_TablePropName="agenda" msprop:Generator_RowDeletingName="agendaRowDeleting" msprop:Generator_RowChangingName="agendaRowChanging" msprop:Generator_RowEvHandlerName="agendaRowChangeEventHandler" msprop:Generator_RowDeletedName="agendaRowDeleted" msprop:Generator_RowClassName="agendaRow" msprop:Generator_UserTableName="agenda" msprop:Generator_RowEvArgName="agendaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -247,7 +248,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tarea" msprop:Generator_TableClassName="tareaDataTable" msprop:Generator_TableVarName="tabletarea" msprop:Generator_TablePropName="tarea" msprop:Generator_RowDeletingName="tareaRowDeleting" msprop:Generator_RowChangingName="tareaRowChanging" msprop:Generator_RowEvHandlerName="tareaRowChangeEventHandler" msprop:Generator_RowDeletedName="tareaRowDeleted" msprop:Generator_UserTableName="tarea" msprop:Generator_RowChangedName="tareaRowChanged" msprop:Generator_RowEvArgName="tareaRowChangeEvent" msprop:Generator_RowClassName="tareaRow">
+        <xs:element name="tarea" msprop:Generator_TableClassName="tareaDataTable" msprop:Generator_TableVarName="tabletarea" msprop:Generator_RowChangedName="tareaRowChanged" msprop:Generator_TablePropName="tarea" msprop:Generator_RowDeletingName="tareaRowDeleting" msprop:Generator_RowChangingName="tareaRowChanging" msprop:Generator_RowEvHandlerName="tareaRowChangeEventHandler" msprop:Generator_RowDeletedName="tareaRowDeleted" msprop:Generator_RowClassName="tareaRow" msprop:Generator_UserTableName="tarea" msprop:Generator_RowEvArgName="tareaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_agenda" msprop:Generator_ColumnVarNameInTable="columnid_agenda" msprop:Generator_ColumnPropNameInRow="id_agenda" msprop:Generator_ColumnPropNameInTable="id_agendaColumn" msprop:Generator_UserColumnName="id_agenda" type="xs:int" />
@@ -287,7 +288,7 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="id_agenda_foranea" msdata:parent="agenda" msdata:child="tarea" msdata:parentkey="id" msdata:childkey="id_agenda" msprop:Generator_UserChildTable="tarea" msprop:Generator_ChildPropName="GettareaRows" msprop:Generator_UserRelationName="id_agenda_foranea" msprop:Generator_ParentPropName="agendaRow" msprop:Generator_RelationVarName="relationid_agenda_foranea" msprop:Generator_UserParentTable="agenda" />
+      <msdata:Relationship name="id_agenda_foranea" msdata:parent="agenda" msdata:child="tarea" msdata:parentkey="id" msdata:childkey="id_agenda" msprop:Generator_UserChildTable="tarea" msprop:Generator_ChildPropName="GettareaRows" msprop:Generator_UserRelationName="id_agenda_foranea" msprop:Generator_RelationVarName="relationid_agenda_foranea" msprop:Generator_UserParentTable="agenda" msprop:Generator_ParentPropName="agendaRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

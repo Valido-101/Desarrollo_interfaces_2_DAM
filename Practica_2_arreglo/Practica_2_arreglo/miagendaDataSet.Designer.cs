@@ -1410,7 +1410,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::Practica_2_arreglo.Properties.Settings.Default.miagenda2ConnectionString;
+            this._connection.ConnectionString = global::Practica_2_arreglo.Properties.Settings.Default.miagendaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1646,7 +1646,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<long> getIdAutomatico() {
+        public virtual object getIdAutomatico() {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1664,10 +1664,10 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
             }
             if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return new global::System.Nullable<long>();
+                return null;
             }
             else {
-                return new global::System.Nullable<long>(((long)(returnValue)));
+                return ((object)(returnValue));
             }
         }
     }
@@ -2015,7 +2015,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::Practica_2_arreglo.Properties.Settings.Default.miagenda2ConnectionString;
+            this._connection.ConnectionString = global::Practica_2_arreglo.Properties.Settings.Default.miagendaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2606,7 +2606,7 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<long> numTareasDiaConcreto(int p1, int p2, int p3) {
+        public virtual object numTareasDiaConcreto(int p1, int p2, int p3) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[4];
             command.Parameters[0].Value = ((int)(p1));
             command.Parameters[1].Value = ((int)(p2));
@@ -2627,10 +2627,10 @@ namespace Practica_2_arreglo.miagendaDataSetTableAdapters {
             }
             if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return new global::System.Nullable<long>();
+                return null;
             }
             else {
-                return new global::System.Nullable<long>(((long)(returnValue)));
+                return ((object)(returnValue));
             }
         }
     }

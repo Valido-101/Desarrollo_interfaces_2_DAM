@@ -28,7 +28,7 @@ namespace Practica_2_arreglo
         {
             this.tareaTableAdapter.setTareasAgendaDiaConcreto(this.miagendaDataSet.tarea, Convert.ToInt32(txt_box_id_agenda.Text), Convert.ToInt32(txt_box_dia.Text), Convert.ToInt32(txt_box_mes.Text));
 
-            if (this.tareaTableAdapter.numTareasDiaConcreto(Convert.ToInt32(txt_box_id_agenda.Text), Convert.ToInt32(txt_box_dia.Text), Convert.ToInt32(txt_box_mes.Text)) == 0)
+            if (Convert.ToInt32(this.tareaTableAdapter.numTareasDiaConcreto(Convert.ToInt32(txt_box_id_agenda.Text), Convert.ToInt32(txt_box_dia.Text), Convert.ToInt32(txt_box_mes.Text))) == 0)
             {
                 MessageBox.Show("No hay ninguna tarea para ese día", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

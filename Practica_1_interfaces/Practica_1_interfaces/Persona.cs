@@ -110,5 +110,6 @@ namespace Practica_1_interfaces
         {
             return "Nombre: " + Nombre + "\n Apellidos: " + Apellidos + "\n Dni: " + Dni + "\n Fecha de nacimiento: " + Fecha_nac + "\n Peso: " + Peso + "\n Altura: " + Altura;
         }
+
     }
 }
