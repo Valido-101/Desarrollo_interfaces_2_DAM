@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prueba_tunneling_bubbling"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
     <Grid>
         <Button x:Name="btn_contenedor" PreviewMouseLeftButtonDown="onClickContenedor">
             <Grid Width="100" Height="100">

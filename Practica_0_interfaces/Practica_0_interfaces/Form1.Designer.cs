@@ -43,6 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_enviar = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // btn_crear_persona
@@ -184,6 +185,10 @@
             this.btn_enviar.Visible = false;
             this.btn_enviar.Click += new System.EventHandler(this.btn_enviar_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Usuario\\Documents\\HelpNDoc\\Output\\chm\\Proyecto Ayuda 1.chm";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,6 +210,7 @@
             this.Controls.Add(this.btn_mostrar_persona);
             this.Controls.Add(this.btn_crear_persona);
             this.Name = "Form1";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Programa";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,6 +234,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_enviar;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

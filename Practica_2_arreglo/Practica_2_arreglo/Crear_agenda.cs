@@ -26,7 +26,7 @@ namespace Practica_2_arreglo
 
         private void btn_crear_agenda_Click(object sender, EventArgs e)
         {
-            this.agendaTableAdapter.crearAgenda(Convert.ToInt32(this.agendaTableAdapter.getIdAutomatico()), txt_box_nombre_agenda.Text, Convert.ToInt32(txt_box_annio_agenda.Text));
+            this.agendaTableAdapter.crearAgenda(Convert.ToInt32(this.agendaTableAdapter.getIdAutomatico())+1, txt_box_nombre_agenda.Text, Convert.ToInt32(txt_box_annio_agenda.Text));
             this.agendaTableAdapter.Fill(this.miagendaDataSet.agenda);
             MessageBox.Show("Agenda creada con éxito", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();

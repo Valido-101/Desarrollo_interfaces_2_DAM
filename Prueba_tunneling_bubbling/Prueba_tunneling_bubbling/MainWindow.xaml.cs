@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 
 namespace Prueba_tunneling_bubbling
 {
@@ -27,12 +28,20 @@ namespace Prueba_tunneling_bubbling
 
         public void onClickContenido(object sender, RoutedEventArgs e) 
         {
-            MessageBox.Show("Soy el botón contenido");
+            System.Windows.MessageBox.Show("Soy el botón contenido");
         }
 
         public void onClickContenedor(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Soy el botón contenedor");
+            System.Windows.MessageBox.Show("Soy el botón contenedor");
+        }
+
+        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if(e.Key == Key.F1) 
+            {
+                Help.ShowHelp(null, "C:/Users/Usuario/Documents/HelpNDoc/Output/chm/Proyecto Ayuda 1.chm");
+            }
         }
     }
 }
