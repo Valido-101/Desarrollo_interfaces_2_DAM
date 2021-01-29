@@ -39,17 +39,17 @@ namespace Examen_enero
             // lstbox_videojuegos
             // 
             this.lstbox_videojuegos.FormattingEnabled = true;
-            this.lstbox_videojuegos.Location = new System.Drawing.Point(147, 104);
+            this.lstbox_videojuegos.Location = new System.Drawing.Point(69, 104);
             this.lstbox_videojuegos.Name = "lstbox_videojuegos";
-            this.lstbox_videojuegos.Size = new System.Drawing.Size(168, 225);
+            this.lstbox_videojuegos.Size = new System.Drawing.Size(240, 225);
             this.lstbox_videojuegos.TabIndex = 0;
             // 
             // lstbox_clientes
             // 
             this.lstbox_clientes.FormattingEnabled = true;
-            this.lstbox_clientes.Location = new System.Drawing.Point(408, 104);
+            this.lstbox_clientes.Location = new System.Drawing.Point(364, 104);
             this.lstbox_clientes.Name = "lstbox_clientes";
-            this.lstbox_clientes.Size = new System.Drawing.Size(165, 225);
+            this.lstbox_clientes.Size = new System.Drawing.Size(232, 225);
             this.lstbox_clientes.TabIndex = 1;
             // 
             // btn_alquilar
@@ -65,7 +65,7 @@ namespace Examen_enero
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(147, 85);
+            this.label1.Location = new System.Drawing.Point(69, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 13);
             this.label1.TabIndex = 3;
@@ -74,7 +74,7 @@ namespace Examen_enero
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(405, 85);
+            this.label2.Location = new System.Drawing.Point(361, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 4;
@@ -84,6 +84,7 @@ namespace Examen_enero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Examen_enero.Properties.Resources._584596105a243;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -91,6 +92,7 @@ namespace Examen_enero
             this.Controls.Add(this.lstbox_clientes);
             this.Controls.Add(this.lstbox_videojuegos);
             this.Name = "AlquilarVideojuego";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alquilar Videojuego";
             this.Load += new System.EventHandler(this.AlquilarVideojuego_Load);
             this.ResumeLayout(false);

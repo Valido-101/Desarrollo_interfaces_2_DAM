@@ -100,6 +100,8 @@ namespace Examen_enero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Examen_enero.Properties.Resources.FNDRY_Website_Retailer_Page_CEX_01_Recovered_458x360;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -109,6 +111,7 @@ namespace Examen_enero
             this.Controls.Add(this.txtbox_nombre);
             this.Controls.Add(this.txtbox_dni);
             this.Name = "AltaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Darse de Alta";
             this.ResumeLayout(false);
             this.PerformLayout();

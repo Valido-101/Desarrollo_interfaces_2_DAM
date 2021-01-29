@@ -3,6 +3,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,9 @@ namespace Examen_enero
             videojuegos.Add(new Videojuego(3,"Marvel's SpiderMan", "Mundo Abierto"));
             videojuegos.Add(new Videojuego(4, "God of War 4", "Mundo Abierto"));
             videojuegos.Add(new Videojuego(5, "Dragon Ball Z: Kakarot", "Lucha/Mundo Abierto"));
+
+            //Esto se encarga de encontrar el archivo chm
+            this.helpProvider1.HelpNamespace = Path.Combine(Application.StartupPath, @"..\..\Ayuda\Documento Ayuda Examen.chm");
         }
 
         private void btn_altaCliente_Click(object sender, EventArgs e)

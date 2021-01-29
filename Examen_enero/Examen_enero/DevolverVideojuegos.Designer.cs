@@ -65,11 +65,14 @@ namespace Examen_enero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Examen_enero.Properties.Resources.images;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 290);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_devolver);
             this.Controls.Add(this.lstbox_clientesConVideojuegos);
             this.Name = "DevolverVideojuegos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Devolver Videojuegos";
             this.Load += new System.EventHandler(this.DevolverVideojuegos_Load);
             this.ResumeLayout(false);

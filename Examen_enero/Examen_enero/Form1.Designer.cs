@@ -32,16 +32,18 @@ namespace Examen_enero
             this.btn_altaCliente = new System.Windows.Forms.Button();
             this.btn_alquilarVideojuego = new System.Windows.Forms.Button();
             this.btn_devolverVideojuegos = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // btn_altaCliente
             // 
+            this.btn_altaCliente.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_altaCliente.Location = new System.Drawing.Point(339, 107);
             this.btn_altaCliente.Name = "btn_altaCliente";
             this.btn_altaCliente.Size = new System.Drawing.Size(122, 23);
             this.btn_altaCliente.TabIndex = 0;
             this.btn_altaCliente.Text = "Alta Cliente";
-            this.btn_altaCliente.UseVisualStyleBackColor = true;
+            this.btn_altaCliente.UseVisualStyleBackColor = false;
             this.btn_altaCliente.Click += new System.EventHandler(this.btn_altaCliente_Click);
             // 
             // btn_alquilarVideojuego
@@ -68,11 +70,16 @@ namespace Examen_enero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::Examen_enero.Properties.Resources.CEX_Marlands;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_devolverVideojuegos);
             this.Controls.Add(this.btn_alquilarVideojuego);
             this.Controls.Add(this.btn_altaCliente);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form_inicio";
+            this.helpProvider1.SetShowHelp(this, true);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.ResumeLayout(false);
 
@@ -83,6 +90,7 @@ namespace Examen_enero
         private System.Windows.Forms.Button btn_altaCliente;
         private System.Windows.Forms.Button btn_alquilarVideojuego;
         private System.Windows.Forms.Button btn_devolverVideojuegos;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 
