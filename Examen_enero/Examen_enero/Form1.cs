@@ -25,5 +25,19 @@ namespace Examen_enero
             videojuegos.Add(new Videojuego(4, "God of War 4", "Mundo Abierto"));
             videojuegos.Add(new Videojuego(5, "Dragon Ball Z: Kakarot", "Lucha/Mundo Abierto"));
         }
+
+        private void btn_altaCliente_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AltaCliente form_altaCliente = new AltaCliente(clientes);
+            form_altaCliente.Show();
+
+            form_altaCliente.FormClosed += Form_altaCliente_FormClosed;
+        }
+
+        private void Form_altaCliente_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
     }
 }

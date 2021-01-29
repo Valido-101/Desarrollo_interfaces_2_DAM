@@ -1,0 +1,11 @@
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\bin\Debug\Examen_enero.exe.config
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\bin\Debug\Examen_enero.exe
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\bin\Debug\Examen_enero.pdb
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.AltaCliente.resources
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.Form_inicio.resources
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.exe
+C:\Users\Usuario\source\repos\Examen_enero\Examen_enero\obj\Debug\Examen_enero.pdb

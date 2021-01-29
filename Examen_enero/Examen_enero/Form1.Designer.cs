@@ -42,6 +42,7 @@ namespace Examen_enero
             this.btn_altaCliente.TabIndex = 0;
             this.btn_altaCliente.Text = "Alta Cliente";
             this.btn_altaCliente.UseVisualStyleBackColor = true;
+            this.btn_altaCliente.Click += new System.EventHandler(this.btn_altaCliente_Click);
             // 
             // btn_alquilarVideojuego
             // 

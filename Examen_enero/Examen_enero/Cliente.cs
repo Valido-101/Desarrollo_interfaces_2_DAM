@@ -11,12 +11,12 @@ namespace Examen_enero
         private string nombre, apellidos, dni;
         private ArrayList videojuegos;
 
-        public Cliente(string nombre, string apellidos, string dni, ArrayList videojuegos)
+        public Cliente(string nombre, string apellidos, string dni)
         {
             this.nombre = nombre;
             this.apellidos = apellidos;
             this.dni = dni;
-            this.videojuegos = videojuegos;
+            this.videojuegos = new ArrayList();
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
