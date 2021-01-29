@@ -65,7 +65,7 @@ namespace Examen_enero
                 //Obtenemos la lista de videojuegos del cliente, la eliminamos del cliente y se la pasamos a la lista de videojuegos disponibles
                 ArrayList videojuegos_devueltos = c.Videojuegos;
 
-                c.Videojuegos.Clear();
+                c.Videojuegos = new ArrayList();
 
                 foreach(Videojuego v in videojuegos_devueltos) 
                 {
