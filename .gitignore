@@ -2,6 +2,7 @@
 *.wav
 *.png
 *.rar
+*.msi
 
 #Proyectos que no quiero subir
 WindowsFormsApp1/
