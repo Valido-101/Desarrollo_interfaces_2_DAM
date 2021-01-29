@@ -36,7 +36,7 @@ namespace Examen_enero
             // 
             // btn_altaCliente
             // 
-            this.btn_altaCliente.Location = new System.Drawing.Point(185, 91);
+            this.btn_altaCliente.Location = new System.Drawing.Point(339, 107);
             this.btn_altaCliente.Name = "btn_altaCliente";
             this.btn_altaCliente.Size = new System.Drawing.Size(122, 23);
             this.btn_altaCliente.TabIndex = 0;
@@ -46,21 +46,23 @@ namespace Examen_enero
             // 
             // btn_alquilarVideojuego
             // 
-            this.btn_alquilarVideojuego.Location = new System.Drawing.Point(185, 159);
+            this.btn_alquilarVideojuego.Location = new System.Drawing.Point(339, 175);
             this.btn_alquilarVideojuego.Name = "btn_alquilarVideojuego";
             this.btn_alquilarVideojuego.Size = new System.Drawing.Size(122, 23);
             this.btn_alquilarVideojuego.TabIndex = 1;
             this.btn_alquilarVideojuego.Text = "Alquilar Videojuego";
             this.btn_alquilarVideojuego.UseVisualStyleBackColor = true;
+            this.btn_alquilarVideojuego.Click += new System.EventHandler(this.btn_alquilarVideojuego_Click);
             // 
             // btn_devolverVideojuegos
             // 
-            this.btn_devolverVideojuegos.Location = new System.Drawing.Point(185, 227);
+            this.btn_devolverVideojuegos.Location = new System.Drawing.Point(339, 243);
             this.btn_devolverVideojuegos.Name = "btn_devolverVideojuegos";
             this.btn_devolverVideojuegos.Size = new System.Drawing.Size(122, 23);
             this.btn_devolverVideojuegos.TabIndex = 2;
             this.btn_devolverVideojuegos.Text = "Devolver Videojuegos";
             this.btn_devolverVideojuegos.UseVisualStyleBackColor = true;
+            this.btn_devolverVideojuegos.Click += new System.EventHandler(this.btn_devolverVideojuegos_Click);
             // 
             // Form_inicio
             // 

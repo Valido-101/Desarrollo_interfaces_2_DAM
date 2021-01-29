@@ -27,7 +27,7 @@ namespace Examen_enero
         override
         public string ToString()
         {
-            return "Cliente: Nombre -> " + nombre + " | Apellidos -> " + apellidos + " | DNI -> " + dni;
+            return "Nombre -> " + nombre + " | Apellidos -> " + apellidos + " | DNI -> " + dni;
         }
     }
 }

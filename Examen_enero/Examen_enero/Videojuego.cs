@@ -25,7 +25,7 @@ namespace Examen_enero
         override
         public string ToString()
         {
-            return "Videojuego: Código -> " + codigo + " | Nombre -> " + nombre + " | Tema -> " + tema;
+            return "Código -> " + codigo + " | Nombre -> " + nombre + " | Tema -> " + tema;
         }
 
     }
