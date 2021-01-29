@@ -70,7 +70,7 @@ namespace Examen_enero
             this.Controls.Add(this.btn_devolver);
             this.Controls.Add(this.lstbox_clientesConVideojuegos);
             this.Name = "DevolverVideojuegos";
-            this.Text = "DevolverVideojuegos";
+            this.Text = "Devolver Videojuegos";
             this.Load += new System.EventHandler(this.DevolverVideojuegos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
