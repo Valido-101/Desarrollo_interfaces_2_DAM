@@ -35,6 +35,7 @@
             this.btn_mostrar_3_nombres_mas_largos = new System.Windows.Forms.Button();
             this.btn_mostrar_personas_con_algun_dato_vacio = new System.Windows.Forms.Button();
             this.btn_salir_aplicacion = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // btn_insertar_persona
@@ -97,6 +98,11 @@
             this.btn_salir_aplicacion.UseVisualStyleBackColor = true;
             this.btn_salir_aplicacion.Click += new System.EventHandler(this.btn_salir_aplicacion_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Usuario\\source\\repos\\Practica_1_interfaces\\Practica_1_interfaces\\bin\\Deb" +
+    "ug\\Manual de Ayuda de Usuario.chm";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,6 +118,7 @@
             this.Controls.Add(this.btn_insertar_persona);
             this.DoubleBuffered = true;
             this.Name = "Form1";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Programa";
             this.ResumeLayout(false);
 
@@ -125,6 +132,7 @@
         private System.Windows.Forms.Button btn_mostrar_3_nombres_mas_largos;
         private System.Windows.Forms.Button btn_mostrar_personas_con_algun_dato_vacio;
         private System.Windows.Forms.Button btn_salir_aplicacion;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

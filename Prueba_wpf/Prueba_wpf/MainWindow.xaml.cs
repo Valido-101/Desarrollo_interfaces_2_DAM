@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 
 namespace Prueba_wpf
 {
@@ -78,11 +79,19 @@ namespace Prueba_wpf
 
         private void btn_salir_aplicacion_Click(object sender, RoutedEventArgs e)
         {
-            var salir = MessageBox.Show("¿Desea salir de la aplicación?","Salir",MessageBoxButton.YesNo);
+            var salir = System.Windows.MessageBox.Show("¿Desea salir de la aplicación?","Salir",MessageBoxButton.YesNo);
 
             if (salir == MessageBoxResult.Yes) 
             {
                 this.Close();
+            }
+        }
+
+        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if(e.Key == Key.F1) 
+            {
+                Help.ShowHelp(null, @"C:\Users\Usuario\Documents\HelpNDoc\Output\chm\Manual de Ayuda de Usuario.chm");
             }
         }
     }
