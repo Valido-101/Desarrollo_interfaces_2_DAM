@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2020\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="InstaladorTeatro" ProductVersion="1.00.0000" Built="2-5-2021 12-20-46" Config="Default Configuration" Media="Debug" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="##IDS_FEATURE_DISPLAY_NAME1##">InstaladorTeatro_Files</Feature>
+  </Features>
+  <Components>
+    <Component x64="32">AllOtherFiles</Component>
+    <Component x64="32">AllOtherFiles1</Component>
+    <Component x64="32">AllOtherFiles2</Component>
+    <Component x64="32">AllOtherFiles3</Component>
+    <Component x64="32">AllOtherFiles4</Component>
+    <Component x64="32" KeyPath="envdte.dll">EnvDTE.dll</Component>
+    <Component x64="32" KeyPath="gma.qrcodenet.encoding.dll">Gma.QrCodeNet.Encoding.dll</Component>
+    <Component x64="32" KeyPath="microsoft.reportviewer.commo">Microsoft.ReportViewer.Common.dll</Component>
+    <Component x64="32" KeyPath="microsoft.reportviewer.datav">Microsoft.ReportViewer.DataVisualization.dll</Component>
+    <Component x64="32" KeyPath="microsoft.reportviewer.desig">Microsoft.ReportViewer.Design.dll</Component>
+    <Component x64="32" KeyPath="microsoft.reportviewer.proce">Microsoft.ReportViewer.ProcessingObjectModel.dll</Component>
+    <Component x64="32" KeyPath="microsoft.reportviewer.winfo">Microsoft.ReportViewer.WinForms.dll</Component>
+    <Component x64="32" KeyPath="microsoft.sqlserver.types.dl">Microsoft.SqlServer.Types.dll</Component>
+    <Component x64="32">Practica_6.Archivos_de_c_digo_fuente</Component>
+    <Component x64="32">Practica_6.Archivos_de_contenido</Component>
+    <Component x64="32">Practica_6.Archivos_de_documentaci_n</Component>
+    <Component x64="32">Practica_6.Elementos_copiados_localmente</Component>
+    <Component x64="32">Practica_6.Ensamblados_de_serializaci_n_XML</Component>
+    <Component x64="32">Practica_6.Implementaci_n_en_tiempo_de_ejecuci_n</Component>
+    <Component x64="32">Practica_6.Recursos_adaptados</Component>
+    <Component x64="32">Practica_6.Resultado_principal</Component>
+    <Component x64="32" KeyPath="practica_6.resultado_princip">Practica_6.Resultado_principal1</Component>
+    <Component x64="32">Practica_6.S_mbolos_de_depuraci_n</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="05/02/2021 12:18:29" Size="67646" Version="">theatermasks_teatr_3602.ico</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="01/12/2020 10:54:32" Size="29244" Version="">cyrano.jpg</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="03/12/2020 21:59:03" Size="14681" Version="">descarga.jpg</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="17/03/2013 13:26:30" Size="411136" Version="">Gma.QrCodeNet.Encoding.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="17/03/2013 13:26:30" Size="60524" Version="">Gma.QrCodeNet.Encoding.xml</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="30/11/2020 10:12:19" Size="6571" Version="">logofesac.jpg</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="30/11/2020 10:11:50" Size="14439" Version="">logoteatrolosremedios.jpg</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="AllOtherFiles1" Modified="01/12/2020 10:55:02" Size="150460" Version="">romeo_julieta.jpg</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="EnvDTE.dll" Modified="24/11/2020 22:49:06" Size="254840" Version="8.0.50727.932">EnvDTE.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Gma.QrCodeNet.Encoding.dll" Modified="17/03/2013 13:26:30" Size="107008" Version="0.4.1.2">Gma.QrCodeNet.Encoding.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Microsoft.ReportViewer.Common.dll" Modified="27/11/2020 13:21:03" Size="9037440" Version="15.0.1404.0">Microsoft.ReportViewer.Common.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Microsoft.ReportViewer.DataVisualization.dll" Modified="27/11/2020 13:21:03" Size="5100888" Version="15.0.1404.0">Microsoft.ReportViewer.DataVisualization.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Microsoft.ReportViewer.Design.dll" Modified="27/11/2020 13:21:03" Size="90248" Version="15.0.1404.0">Microsoft.ReportViewer.Design.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Microsoft.ReportViewer.ProcessingObjectModel.dll" Modified="27/11/2020 13:21:03" Size="104064" Version="15.0.1404.0">Microsoft.ReportViewer.ProcessingObjectModel.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Microsoft.ReportViewer.WinForms.dll" Modified="27/11/2020 13:21:03" Size="603776" Version="15.0.1404.0">Microsoft.ReportViewer.WinForms.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Microsoft.SqlServer.Types.dll" Modified="27/11/2020 13:21:04" Size="391880" Version="2016.140.100.187">Microsoft.SqlServer.Types.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Practica_6.Resultado_principal1" Modified="05/02/2021 12:20:38" Size="245760" Version="1.0.0.0">Practica_6.exe</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Valido Software Development\GestorTeatro" Component="Practica_6.Resultado_principal1" Modified="27/11/2020 13:21:03" Size="189" Version="">Practica_6.exe.config</File>
+  </Files>
+</BuildReport>

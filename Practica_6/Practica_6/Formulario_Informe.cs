@@ -48,11 +48,11 @@ namespace Practica_6
             var qrEncoder = new QrEncoder(ErrorCorrectionLevel.H);
             var qrCode = qrEncoder.Encode(texto_codificado);
             var renderer = new GraphicsRenderer(new FixedModuleSize(5, QuietZoneModules.Two), Brushes.Black, Brushes.White);
-            using (var stream = new FileStream(Application.StartupPath + @"\qrcode.png", FileMode.Create)) renderer.WriteToStream(qrCode.Matrix, ImageFormat.Png, stream);
+            using (var stream = new FileStream(Application.UserAppDataPath + @"\qrcode.png", FileMode.Create)) renderer.WriteToStream(qrCode.Matrix, ImageFormat.Png, stream);
 
             reportViewer1.LocalReport.EnableExternalImages = true;
 
-            string ruta = Application.StartupPath + @"\qrcode.png";
+            string ruta = Application.UserAppDataPath + @"\qrcode.png";
 
             ReportParameter[] parameters = new ReportParameter[6];
 

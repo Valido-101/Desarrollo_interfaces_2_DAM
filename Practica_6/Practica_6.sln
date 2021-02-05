@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_6", "Practica_6\Practica_6.csproj", "{7C50F750-52C4-42D2-8D35-664646E2220A}"
 EndProject
+Project("{E729F059-12D4-455F-A2A4-FDA8DD25E08A}") = "InstaladorTeatro", "InstaladorTeatro\InstaladorTeatro.isproj", "{26739978-AD7A-4A64-8402-401109E7F656}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7C50F750-52C4-42D2-8D35-664646E2220A} = {7C50F750-52C4-42D2-8D35-664646E2220A}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{7C50F750-52C4-42D2-8D35-664646E2220A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C50F750-52C4-42D2-8D35-664646E2220A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C50F750-52C4-42D2-8D35-664646E2220A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26739978-AD7A-4A64-8402-401109E7F656}.Debug|Any CPU.ActiveCfg = Debug
+		{26739978-AD7A-4A64-8402-401109E7F656}.Debug|Any CPU.Build.0 = Debug
+		{26739978-AD7A-4A64-8402-401109E7F656}.Release|Any CPU.ActiveCfg = Release
+		{26739978-AD7A-4A64-8402-401109E7F656}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
