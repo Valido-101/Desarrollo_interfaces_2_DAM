@@ -1,0 +1,17 @@
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\bin\Debug\Ejercicios_Repaso_4.exe.config
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\bin\Debug\Ejercicios_Repaso_4.exe
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\bin\Debug\Ejercicios_Repaso_4.pdb
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\VentanaPrincipal.g.cs
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\VentanaSecundaria.g.cs
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\App.g.cs
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4_MarkupCompile.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4_MarkupCompile.lref
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\VentanaPrincipal.baml
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\VentanaSecundaria.baml
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4.g.resources
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4.exe
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_4\Ejercicios_Repaso_4\obj\Debug\Ejercicios_Repaso_4.pdb
