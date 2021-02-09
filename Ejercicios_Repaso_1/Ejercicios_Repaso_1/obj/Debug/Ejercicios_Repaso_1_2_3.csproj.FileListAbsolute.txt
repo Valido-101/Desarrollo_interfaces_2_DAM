@@ -1,0 +1,11 @@
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1.FormPrincipal.resources
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1_2_3.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1_2_3.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\bin\Debug\Ejercicios_Repaso_1.exe.config
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\bin\Debug\Ejercicios_Repaso_1.exe
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\bin\Debug\Ejercicios_Repaso_1.pdb
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1_2_3.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1.exe
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1.pdb
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_1\Ejercicios_Repaso_1\obj\Debug\Ejercicios_Repaso_1.Form2.resources
