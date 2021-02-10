@@ -1,0 +1,15 @@
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\bin\Debug\Ejercicios_Repaso_5.exe.config
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\bin\Debug\Ejercicios_Repaso_5.exe
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\bin\Debug\Ejercicios_Repaso_5.pdb
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\VentanaPrincipal.g.cs
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\App.g.cs
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5_MarkupCompile.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5_MarkupCompile.lref
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\VentanaPrincipal.baml
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5.g.resources
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5.exe
+C:\Users\Usuario\source\repos\Ejercicios_Repaso_5\Ejercicios_Repaso_5\obj\Debug\Ejercicios_Repaso_5.pdb
