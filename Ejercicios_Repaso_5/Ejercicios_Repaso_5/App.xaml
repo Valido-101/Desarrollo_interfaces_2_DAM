@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Ejercicios_Repaso_5"
              StartupUri="VentanaPrincipal.xaml">
     <Application.Resources>
-         
+          
     </Application.Resources>
 </Application>

@@ -3,6 +3,8 @@
 *.png
 *.rar
 *.msi
+*.ico
+*.zip
 
 #Proyectos que no quiero subir
 WindowsFormsApp1/

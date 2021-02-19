@@ -37,6 +37,8 @@ namespace Prueba_informes
             reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DatosClass1",Invoice));
 
             this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
         }
     }
 }
